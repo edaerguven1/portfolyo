@@ -137,10 +137,10 @@
 .map-copy p { color: #9fb2c1; }
 .map-copy ul { margin: 22px 0 0; padding: 0; display: grid; gap: 8px; list-style: none; color: #c9d8e0; font-size: 14px; }
 .map-copy li::before { content: "↳"; margin-right: 9px; color: #50d2e9; }
-.map-shot { width: 100%; height: auto; padding: 0; overflow: hidden; border: 0; border-radius: 22px; background: #06111d; display: flex; align-items: center; justify-content: center; }
-.map-shot img { width: 100%; height: auto; display: block; object-fit: cover; transition: transform 500ms; }
-.map-shot video { width: 100%; height: auto; display: block; object-fit: contain; }
-.map-shot:hover img { transform: scale(1.02); }
+.map-shot { position: relative; justify-self: center; margin: 0 auto; width: min(280px, 100%); aspect-ratio: 828 / 1792; padding: 0; overflow: hidden; border: 8px solid #172332; border-radius: 46px; background: #02070c; box-shadow: 0 40px 90px rgba(0,0,0,0.3); }
+.map-shot img, .map-shot video { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+
+
 
 .quality-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; }
 .quality-console { overflow: hidden; border-radius: 24px; color: #d9e5ee; background: #0a1421; box-shadow: 0 22px 50px rgba(7,18,31,.18); }
