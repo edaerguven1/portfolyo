@@ -141,45 +141,7 @@ function transitAnalyticsDemo() {
   return `${windowBar("demo.local / transit / analytics")}<div class="mock-layout">${sidebar("Analitik")}<main class="mock-main"><div class="mock-head"><div><small>SON 7 GÜN</small><strong>Filo performansı</strong></div><span class="mock-action">Raporu dışa aktar</span></div><div class="mock-cards"><div class="mock-metric"><span>Tamamlanan</span><strong>1,284</strong></div><div class="mock-metric"><span>Doluluk</span><strong>%72</strong></div><div class="mock-metric"><span>Gecikme</span><strong>−8%</strong></div></div><div class="analytics-grid"><div class="chart-panel"><div class="panel-label"><span>Sefer hacmi</span><span>Gerçek / Tahmin</span></div><svg class="line-chart" viewBox="0 0 500 160"><path d="M0 128C58 100 68 132 116 87s88 13 132-34 87 21 129-13 74-4 123-44"/><path d="M0 142c60-19 75-2 119-35s82-6 128-23 94-17 135-8 67-17 118-28"/></svg></div><div class="list-panel"><div class="panel-label"><span>Yoğun hatlar</span></div><span>Konak–Karşıyaka <b>%88</b></span><span>Bostanlı–Üçkuyular <b>%76</b></span><span>Pasaport–Alsancak <b>%64</b></span></div></div></main></div>`;
 }
 
-const demoRenderers = {
-  "transit-ops": transitOpsDemo,
-  "transit-mobile": transitMobileDemo,
-  "transit-analytics": transitAnalyticsDemo,
-  
-};
 
-const demoDialog = document.querySelector("#project-demo");
-const demoStage = document.querySelector("#demo-stage");
-const demoThumbnails = document.querySelector("#demo-thumbnails");
-const demoPrev = document.querySelector(".demo-prev");
-const demoNext = document.querySelector(".demo-next");
-const demoClose = document.querySelector(".demo-close");
-let activeDemoProject = "transit";
-let activeDemoScreen = 0;
-
-function renderDemoGallery() {
-  const project = demoProjects[activeDemoProject];
-  const screen = project.screens[activeDemoScreen];
-  document.querySelector("#demo-title").textContent = project.title;
-  document.querySelector("#demo-screen-title").textContent = screen.title;
-  document.querySelector("#demo-screen-description").textContent = screen.description;
-  document.querySelector("#demo-current").textContent = String(activeDemoScreen + 1).padStart(2, "0");
-  document.querySelector("#demo-total").textContent = String(project.screens.length).padStart(2, "0");
-  demoStage.setAttribute("role", "img");
-  demoStage.setAttribute("aria-label", `${project.title}: ${screen.title}`);
-  demoStage.innerHTML = `<div class="demo-artboard ${screen.type}">${demoRenderers[screen.type]()}</div>`;
-  demoThumbnails.replaceChildren(
-    ...project.screens.map((item, index) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = `demo-thumb${index === activeDemoScreen ? " active" : ""}`;
-      button.setAttribute("role", "tab");
-      button.setAttribute("aria-selected", String(index === activeDemoScreen));
-      button.innerHTML = `<span>${String(index + 1).padStart(2, "0")}</span><strong>${item.title}</strong>`;
-      button.addEventListener("click", () => {
-        activeDemoScreen = index;
-        renderDemoGallery();
-      });
       return button;
     }),
   );

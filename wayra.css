@@ -239,8 +239,8 @@ html[data-theme="dark"] .case-summary, html[data-theme="dark"] .value-card, html
   .hero-copy h1, .hero-lead { margin-left: auto; margin-right: auto; }
   .case-label, .hero-actions { justify-content: center; }
   .hero-visual { width: min(600px, 100%); min-height: 620px; margin: 0 auto; transform: none; }
-  .phone-home { left: 50%; transform: translateX(-63%) rotate(-5deg); }
-  .phone-route { right: 3%; }
+  .phone-home { left: 50%; transform: translateX(-60%) rotate(-5deg); }
+  .phone-route { left: 50%; transform: translateX(5%) rotate(6deg); right: auto; bottom: 5%; }
   .hero-facts { width: min(650px, 100%); margin-inline: auto; text-align: left; }
   .case-summary { grid-template-columns: 1fr 1fr; }
   .value-grid, .tech-grid, .social-story { grid-template-columns: 1fr; }
