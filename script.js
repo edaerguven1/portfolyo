@@ -70,7 +70,7 @@ const sectionObserver = new IntersectionObserver(
       else link.removeAttribute("aria-current");
     });
   },
-  { rootMargin: "-30% 0px -58%", threshold: [0.01, 0.25] },
+  { rootMargin: "-20% 0px -40%", threshold: [0.05, 0.2] },
 );
 trackedSections.forEach((section) => sectionObserver.observe(section));
 
@@ -86,7 +86,7 @@ filterButtons.forEach((button) => {
       item.setAttribute("aria-pressed", String(active));
     });
     projectCards.forEach((card) => {
-      const matches = filter === "all" || card.dataset.category.split(" ").includes(filter);
+      const matches = filter === "all" || card.dataset.category.split(/\s+/).includes(filter);
       card.classList.toggle("hidden", !matches);
     });
     const visibleCount = [...projectCards].filter((card) => !card.classList.contains("hidden")).length;
@@ -518,16 +518,24 @@ function drawWave(now = performance.now()) {
 
 resizeCanvas();
 drawWave();
-window.addEventListener("resize", resizeCanvas);
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(resizeCanvas, 150);
+});
 
 const toast = document.querySelector("#toast");
 const copyButton = document.querySelector("#copy-email");
 let toastTimer;
 copyButton.addEventListener("click", async () => {
   const email = copyButton.dataset.email;
-  try {
-    await navigator.clipboard.writeText(email);
-  } catch {
+  if (navigator.clipboard && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (err) {
+      console.error("Clipboard write failed:", err);
+    }
+  } else {
     const temporaryInput = document.createElement("textarea");
     temporaryInput.value = email;
     temporaryInput.style.position = "fixed";
