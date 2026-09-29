@@ -141,40 +141,11 @@ function transitAnalyticsDemo() {
   return `${windowBar("demo.local / transit / analytics")}<div class="mock-layout">${sidebar("Analitik")}<main class="mock-main"><div class="mock-head"><div><small>SON 7 GÜN</small><strong>Filo performansı</strong></div><span class="mock-action">Raporu dışa aktar</span></div><div class="mock-cards"><div class="mock-metric"><span>Tamamlanan</span><strong>1,284</strong></div><div class="mock-metric"><span>Doluluk</span><strong>%72</strong></div><div class="mock-metric"><span>Gecikme</span><strong>−8%</strong></div></div><div class="analytics-grid"><div class="chart-panel"><div class="panel-label"><span>Sefer hacmi</span><span>Gerçek / Tahmin</span></div><svg class="line-chart" viewBox="0 0 500 160"><path d="M0 128C58 100 68 132 116 87s88 13 132-34 87 21 129-13 74-4 123-44"/><path d="M0 142c60-19 75-2 119-35s82-6 128-23 94-17 135-8 67-17 118-28"/></svg></div><div class="list-panel"><div class="panel-label"><span>Yoğun hatlar</span></div><span>Konak–Karşıyaka <b>%88</b></span><span>Bostanlı–Üçkuyular <b>%76</b></span><span>Pasaport–Alsancak <b>%64</b></span></div></div></main></div>`;
 }
 
-function contextChatDemo() {
-  return `${windowBar("demo.local / context-os / workspace")}<div class="chat-layout"><aside class="chat-sources"><span class="mock-section-label">ÇALIŞMA ALANLARI</span><div class="source-mini"><span class="active">Ürün Belgeleri</span><span>Teknik Kararlar</span><span>Müşteri Notları</span><span>Araştırmalar</span></div></aside><main class="chat-center"><div class="mock-head"><div><small>CONTEXT OS</small><strong>Bilgi Asistanı</strong></div></div><div class="chat-query">Yeni ödeme akışındaki ana karar neydi?</div><div class="chat-answer"><b>Karar özeti</b>Ödeme akışı üç adıma indirildi ve misafir ödeme seçeneği korundu.<span class="citation">[1] product-decision-024.md</span></div><div class="chat-input">Bir takip sorusu sorun…</div></main><aside class="chat-inspector"><span class="mock-section-label">KAYNAK DENETÇİSİ</span><div class="inspector-score">confidence: 0.94</div><div class="inspector-lines"><i></i><i></i><i></i></div><div class="source-mini"><span>3 kaynak eşleşti</span><span>Son indeks: 4 dk önce</span></div></aside></div>`;
-}
-
-function contextSourcesDemo() {
-  return `${windowBar("demo.local / context-os / sources")}<div class="mock-layout">${sidebar("Kaynaklar")}<main class="mock-main"><div class="mock-head"><div><small>BİLGİ TABANI</small><strong>Kaynaklar</strong></div><span class="mock-action">+ Kaynak ekle</span></div><div class="mock-cards"><div class="mock-metric"><span>Toplam kaynak</span><strong>184</strong></div><div class="mock-metric"><span>İndekslendi</span><strong>181</strong></div><div class="mock-metric"><span>Parça sayısı</span><strong>4.2K</strong></div></div><div class="docs-grid" style="margin-top:3%"><div class="doc-card"><i></i><strong>Ürün Kararları</strong><span>38 belge · Markdown</span><small>GÜNCEL</small></div><div class="doc-card"><i></i><strong>Teknik Belgeler</strong><span>76 belge · PDF</span><small>GÜNCEL</small></div><div class="doc-card"><i></i><strong>Müşteri Notları</strong><span>70 belge · Docs</span><small>İŞLENİYOR</small></div></div></main></div>`;
-}
-
-function contextPipelineDemo() {
-  return `${windowBar("demo.local / context-os / pipeline")}<div class="mock-layout">${sidebar("İşlem Hattı")}<main class="mock-main"><div class="mock-head"><div><small>GÖZLEMLENEBİLİR RAG</small><strong>İşlem hattı</strong></div><span class="mock-action">Test sorgusu</span></div><div class="pipeline"><div class="pipe-node"><i>01</i><b>Belge Alımı</b><span>184 kaynak</span></div><div class="pipe-node"><i>02</i><b>Parçalama</b><span>4,218 parça</span></div><div class="pipe-node"><i>03</i><b>Vektörleme</b><span>768 boyut</span></div><div class="pipe-node"><i>04</i><b>Yanıt</b><span>0.94 güven</span></div></div><div class="mock-cards"><div class="mock-metric"><span>Ort. gecikme</span><strong>680 ms</strong></div><div class="mock-metric"><span>Kaynak isabeti</span><strong>%91</strong></div><div class="mock-metric"><span>Durum</span><strong>Sağlıklı</strong></div></div></main></div>`;
-}
-
-function guardSuiteDemo() {
-  return `${windowBar("demo.local / formguard / runs / 1842")}<div class="mock-layout">${sidebar("Test Koşuları")}<main class="mock-main"><div class="mock-head"><div><small>RUN #1842 · MAIN</small><strong>Regresyon paketi</strong></div><span class="mock-action">Yeniden çalıştır</span></div><div class="mock-cards"><div class="mock-metric"><span>Başarılı</span><strong>126</strong></div><div class="mock-metric"><span>Başarısız</span><strong>0</strong></div><div class="mock-metric"><span>Süre</span><strong>02:18</strong></div></div><div class="test-suite" style="margin-top:3%"><div class="test-row"><i>✓</i>Kimlik doğrulama<span>chromium</span><b>1.8 s</b></div><div class="test-row"><i>✓</i>Misafir ödeme akışı<span>webkit</span><b>2.4 s</b></div><div class="test-row"><i>✓</i>Profil güncelleme<span>firefox</span><b>1.3 s</b></div><div class="test-row"><i>✓</i>Görsel regresyon<span>3 viewport</span><b>0 fark</b></div><div class="test-row"><i>✓</i>Erişilebilirlik taraması<span>axe-core</span><b>0 hata</b></div></div></main></div>`;
-}
-
-function guardDiffDemo() {
-  return `${windowBar("demo.local / formguard / visual-diff")}<div class="mock-layout">${sidebar("Görsel Fark")}<main class="mock-main"><div class="mock-head"><div><small>CHECKOUT · 1440 × 900</small><strong>Görsel karşılaştırma</strong></div><span class="mock-action">Değişikliği onayla</span></div><div class="diff-layout"><div class="diff-pane"><span>REFERANS · main</span><div class="diff-page"><header></header><main><i></i><i></i></main></div></div><div class="diff-pane changed"><span>GÜNCEL · feature/checkout</span><div class="diff-page"><header></header><main><i></i><i></i></main></div></div></div></main></div>`;
-}
-
-function guardHistoryDemo() {
-  return `${windowBar("demo.local / formguard / history")}<div class="mock-layout">${sidebar("Geçmiş")}<main class="mock-main"><div class="mock-head"><div><small>SON 14 GÜN</small><strong>Test sağlığı</strong></div><span class="mock-action">Filtrele</span></div><div class="mock-cards"><div class="mock-metric"><span>Başarı oranı</span><strong>%99.2</strong></div><div class="mock-metric"><span>Kararsız test</span><strong>2</strong></div><div class="mock-metric"><span>Ort. süre</span><strong>2m 14s</strong></div></div><div class="history-layout" style="margin-top:3%"><div class="history-chart"><div class="panel-label"><span>Koşu süresi</span><span>14 gün</span></div><div class="history-bars"><i style="height:58%"></i><i style="height:78%"></i><i style="height:65%"></i><i style="height:92%"></i><i style="height:70%"></i><i style="height:88%"></i><i style="height:61%"></i></div></div><div class="run-list"><span><i></i>main · #1842<b>02:18</b></span><span><i></i>main · #1841<b>02:11</b></span><span><i></i>release · #1840<b>02:32</b></span><span><i></i>main · #1839<b>02:07</b></span></div></div></main></div>`;
-}
-
 const demoRenderers = {
   "transit-ops": transitOpsDemo,
   "transit-mobile": transitMobileDemo,
   "transit-analytics": transitAnalyticsDemo,
-  "context-chat": contextChatDemo,
-  "context-sources": contextSourcesDemo,
-  "context-pipeline": contextPipelineDemo,
-  "guard-suite": guardSuiteDemo,
-  "guard-diff": guardDiffDemo,
-  "guard-history": guardHistoryDemo,
+  
 };
 
 const demoDialog = document.querySelector("#project-demo");
@@ -252,9 +223,9 @@ const roleProfiles = {
       "Test edilebilir, okunabilir yapı kurarım.",
       "Kullanıcı ihtiyacını teknik kararlara bağlarım.",
     ],
-    stack: ["React", "Node.js", "Express", "PostgreSQL"],
+    stack: ["React", "Node.js", "MongoDB", "PostgreSQL"],
     core: "FULL<br>STACK",
-    nodes: ["UI", "API", "DATA", "TEST"],
+    nodes: ["UI", "API", "NoSQL", "SQL"],
   },
   mobile: {
     code: "MOBILE_DEV",

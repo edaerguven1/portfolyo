@@ -587,7 +587,7 @@ html[data-theme="light"] .demo-thumb.active { color: var(--text); background: va
   .lab-card:last-child { grid-column: 1 / -1; }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .desktop-nav, .hide-mobile, .header-language { display: none; }
   .nav-actions { margin-left: auto; }
   .menu-toggle { display: grid; }
