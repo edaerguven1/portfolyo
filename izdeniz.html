@@ -177,16 +177,66 @@
           <h2 id="flow-title">Dört adımda yolculuk planı.</h2>
           <p>Akış, ilk açılıştan hareket anına kadar her ekranda tek bir ana karar bırakacak şekilde sadeleştirildi.</p>
         </div>
-        <ol class="flow-grid">
-          <li class="flow-card reveal"><span>01</span><b>Ana iskeleyi seç</b><p>Yakındaki veya favori iskeleyi sabitle.</p></li>
-          <li class="flow-card reveal"><span>02</span><b>Sıradaki seferi gör</b><p>Yönü ve kalan süreyi saniyesiyle takip et.</p></li>
-          <li class="flow-card reveal"><span>03</span><b>Rotayı incele</b><p>Ara durakları ve tahmini varışı aç.</p></li>
-          <li class="flow-card reveal"><span>04</span><b>Hatırlatıcı kur</b><p>Yaklaşan kalkışları tek yerde yönet.</p></li>
-        </ol>
-        <div class="flow-visuals reveal">
-          <figure><img src="assets/izdeniz/pier-selector.webp" alt="Koyu temada iskele seçim ekranı" /><figcaption>İskele seçimi</figcaption></figure>
-          <figure><img src="assets/izdeniz/trip-detail.webp" alt="Pasaport–Bostanlı sefer detay ekranı" /><figcaption>Rota ve ara durak</figcaption></figure>
-          <figure><img src="assets/izdeniz/notifications.webp" alt="Aktif sefer hatırlatıcıları ekranı" /><figcaption>Hatırlatıcı yönetimi</figcaption></figure>
+        <div class="onboarding-cards reveal">
+          <article class="oc-card">
+            <header class="oc-header">
+              <span class="oc-step">Adım 1/4</span>
+              <span class="oc-title">İlk Karşılama</span>
+            </header>
+            <figure class="oc-figure">
+              <img src="assets/izdeniz/onboarding-home-pier.webp" alt="İlk karşılama ekranı" />
+            </figure>
+            <div class="oc-body">
+              <h3>Seferini Saniyeler İçinde Bul</h3>
+              <p>Tüm vapur sefer saatlerine anında erişim sağlayan minimal onboarding katmanı.</p>
+              <div class="oc-feature"><i>⚬</i> Lottie Animasyon & Hero Giriş</div>
+            </div>
+          </article>
+          
+          <article class="oc-card">
+            <header class="oc-header">
+              <span class="oc-step">Adım 2/4</span>
+              <span class="oc-title">GPS Konum</span>
+            </header>
+            <figure class="oc-figure">
+              <img src="assets/izdeniz/onboarding-nearest.webp" alt="En yakın iskele ekranı" />
+            </figure>
+            <div class="oc-body">
+              <h3>En Yakın İskele & Rota</h3>
+              <p>Kullanıcı konumuna göre en yakın iskeleyi ve sıradaki seferi otomatik sıralar.</p>
+              <div class="oc-feature"><i>⚬</i> GPS Tabanlı İskele Mesafe Hesaplama</div>
+            </div>
+          </article>
+
+          <article class="oc-card">
+            <header class="oc-header">
+              <span class="oc-step">Adım 3/4</span>
+              <span class="oc-title">Arabalı Vapur</span>
+            </header>
+            <figure class="oc-figure">
+              <img src="assets/izdeniz/onboarding-car-ferry.webp" alt="Arabalı vapur ekranı" />
+            </figure>
+            <div class="oc-body">
+              <h3>Bostanlı ⇄ Üçkuyular</h3>
+              <p>Araçlı yolcular için tarifeli arabalı vapur kalkış ve araç kapasitesi entegrasyonu.</p>
+              <div class="oc-feature"><i>⚬</i> Araç Kapasitesi & Tarife Motoru</div>
+            </div>
+          </article>
+
+          <article class="oc-card">
+            <header class="oc-header">
+              <span class="oc-step step-green">Adım 4/4</span>
+              <span class="oc-title">Kişiselleştirme</span>
+            </header>
+            <figure class="oc-figure">
+              <img src="assets/izdeniz/onboarding-schedule.webp" alt="Kişiselleştirme ekranı" />
+            </figure>
+            <div class="oc-body">
+              <h3>Ana İskeleni Seç & Başla</h3>
+              <p>Sık kullanılan iskeleyi birincil favori olarak kaydetme ve hızlı başlatma.</p>
+              <div class="oc-feature step-green"><i>⚬</i> AsyncStorage Yerel Tercihler Deposu</div>
+            </div>
+          </article>
         </div>
       </section>
 
