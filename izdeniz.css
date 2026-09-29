@@ -110,9 +110,9 @@
 .flow-card b { margin-top: auto; font-family: var(--display); font-size: 18px; }
 .flow-card p { margin: 6px 0 0; color: var(--muted); font-size: 14px; }
 .flow-visuals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.flow-visuals figure { position: relative; height: 560px; margin: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 28px; background: var(--surface-soft); }
-.flow-visuals figure:nth-child(2) { transform: translateY(28px); }
-.flow-visuals img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 600ms; }
+.flow-visuals figure { position: relative; height: 560px; margin: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; }
+/* removed staggered transform */
+.flow-visuals img { width: 100%; height: 100%; object-fit: contain; object-position: center; transition: transform 600ms; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.15)); }
 .flow-visuals figure:hover img { transform: scale(1.025); }
 .flow-visuals figcaption { position: absolute; inset: auto 14px 14px; padding: 10px 13px; border-radius: 12px; color: #f4fbff; background: rgba(6,20,32,.76); backdrop-filter: blur(12px); font-size: 12px; font-weight: 700; }
 
@@ -390,7 +390,7 @@ html[data-theme="dark"] .case-outro {
   .flow-grid { grid-template-columns: 1fr 1fr; }
   .flow-visuals { grid-template-columns: 1fr 1fr; }
   .flow-visuals figure:last-child { grid-column: 1 / -1; height: 520px; }
-  .flow-visuals figure:nth-child(2) { transform: none; }
+  
   .architecture { grid-template-columns: 1fr; }
   .architecture > i { transform: rotate(90deg); justify-self: center; }
   .architecture > i:nth-of-type(2) { display: block; }
