@@ -60,7 +60,7 @@ svg { display: block; }
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 14px 22px; }
 .nav-shell { max-width: 1180px; min-height: 62px; margin: 0 auto; padding: 8px 10px 8px 16px; border: 1px solid var(--border); border-radius: 22px; background: color-mix(in srgb, var(--surface-solid) 76%, transparent); backdrop-filter: blur(20px) saturate(140%); box-shadow: 0 10px 35px rgba(24, 34, 59, 0.08); display: flex; align-items: center; gap: 18px; transition: background 240ms; }
 .brand { display: inline-flex; align-items: center; gap: 9px; font-family: var(--display); font-weight: 800; letter-spacing: -0.04em; }
-.brand-mark { width: 44px; height: 44px; display: block; background: var(--text); -webkit-mask-image: url("assets/logo.png"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url("assets/logo.png"); mask-size: contain; mask-repeat: no-repeat; mask-position: center; transition: background 240ms; }
+.brand-mark { width: 44px; height: 44px; display: block; background: var(--text); -webkit-mask-image: url("assets/logo.webp"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url("assets/logo.webp"); mask-size: contain; mask-repeat: no-repeat; mask-position: center; transition: background 240ms; }
 .brand-name { white-space: nowrap; }
 .brand-dot { color: var(--violet); }
 .availability { display: flex; align-items: center; gap: 8px; padding: 5px 10px; border-radius: 99px; background: var(--surface-soft); color: var(--muted); font-size: 12px; font-weight: 700; white-space: nowrap; }

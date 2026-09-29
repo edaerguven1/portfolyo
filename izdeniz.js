@@ -47,7 +47,7 @@ trackedSections.forEach((section) => sectionObserver.observe(section));
 
 const galleryItems = [
   {
-    src: "assets/izdeniz/home-light.png",
+    src: "assets/izdeniz/home-light.webp",
     category: "core",
     thumb: "Ana ekran",
     title: "Sıradaki sefer, ilk bakışta",
@@ -56,7 +56,7 @@ const galleryItems = [
     points: ["Tek bakışta rota ve süre", "Sonraki seferlere hızlı erişim", "Yol tarifi ve favori eylemleri"],
   },
   {
-    src: "assets/izdeniz/trip-detail.png",
+    src: "assets/izdeniz/trip-detail.webp",
     category: "core",
     thumb: "Sefer detayı",
     title: "Rotayı gerektiğinde derinleştir",
@@ -65,7 +65,7 @@ const galleryItems = [
     points: ["Kalkış ve varış saatleri", "Ara durak zaman çizgisi", "Bağlamı koruyan alt sayfa"],
   },
   {
-    src: "assets/izdeniz/notifications.png",
+    src: "assets/izdeniz/notifications.webp",
     category: "core",
     thumb: "Hatırlatıcılar",
     title: "Yaklaşan seferleri unutma",
@@ -74,7 +74,7 @@ const galleryItems = [
     points: ["Aktif hatırlatıcı listesi", "Kalkıştan önce bildirim", "Kaydırarak hızlı silme"],
   },
   {
-    src: "assets/izdeniz/pier-selector.png",
+    src: "assets/izdeniz/pier-selector.webp",
     category: "core",
     thumb: "İskele seçimi",
     title: "İskele değiştirirken akışı bölme",
@@ -83,7 +83,7 @@ const galleryItems = [
     points: ["İskele adına göre arama", "Favori ve yakın iskeleler", "Erişilebilirlik simgeleri"],
   },
   {
-    src: "assets/izdeniz/gulf-map.png",
+    src: "assets/izdeniz/gulf-map.webp",
     category: "map",
     thumb: "3D Körfez",
     title: "Tarifeyi mekânsal bir deneyime dönüştür",
@@ -92,7 +92,7 @@ const galleryItems = [
     points: ["Sekiz iç körfez iskelesi", "Yolcu ve arabalı vapur filtresi", "Rota katmanı ve kamera kontrolleri"],
   },
   {
-    src: "assets/izdeniz/onboarding-schedule.png",
+    src: "assets/izdeniz/onboarding-schedule.webp",
     category: "onboarding",
     thumb: "Seferleri bul",
     title: "Değeri ilk ekranda anlat",
@@ -101,7 +101,7 @@ const galleryItems = [
     points: ["Tek cümlelik fayda", "Atla veya devam et", "İlerleme göstergesi"],
   },
   {
-    src: "assets/izdeniz/onboarding-nearest.png",
+    src: "assets/izdeniz/onboarding-nearest.webp",
     category: "onboarding",
     thumb: "Yakın iskele",
     title: "Konum izninin faydasını açıkla",
@@ -110,7 +110,7 @@ const galleryItems = [
     points: ["İzin öncesi bağlam", "Yakınlığa göre sıralama", "Kontrol kullanıcıda"],
   },
   {
-    src: "assets/izdeniz/onboarding-car-ferry.png",
+    src: "assets/izdeniz/onboarding-car-ferry.webp",
     category: "onboarding",
     thumb: "Arabalı vapur",
     title: "Özel hattı ayrı bir değer olarak göster",
@@ -119,7 +119,7 @@ const galleryItems = [
     points: ["Hat odaklı anlatım", "Yolcu ve araç bağlamı", "Kısa ve taranabilir metin"],
   },
   {
-    src: "assets/izdeniz/onboarding-home-pier.png",
+    src: "assets/izdeniz/onboarding-home-pier.webp",
     category: "onboarding",
     thumb: "Ana iskele",
     title: "Kişiselleştirmeyi başlangıca taşı",
@@ -128,7 +128,7 @@ const galleryItems = [
     points: ["Varsayılan iskele seçimi", "Hızlı değiştirme", "İlk kullanımın tamamlanması"],
   },
   {
-    src: "assets/izdeniz/home-dark.png",
+    src: "assets/izdeniz/home-dark.webp",
     category: "theme",
     thumb: "Koyu tema",
     title: "Aynı hiyerarşi, farklı ışık koşulu",

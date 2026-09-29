@@ -6,5 +6,21 @@
   "scripts": {
     "dev": "node dev-server.mjs",
     "check": "node --check script.js && node --check dev-server.mjs"
+  },
+  "description": "",
+  "main": "i18n.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edaerguven1/portfolyo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edaerguven1/portfolyo/issues"
+  },
+  "homepage": "https://github.com/edaerguven1/portfolyo#readme",
+  "dependencies": {
+    "sharp": "^0.35.5"
   }
 }
