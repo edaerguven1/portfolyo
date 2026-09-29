@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full-stack, mobil uygulama ve modern ürün geliştirme üzerine çalışan yeni mezun geliştirici portföyü."
+    />
+    <meta name="theme-color" content="#f7f8fc" />
+    <title>Eda Nur Ergüven — Full-Stack & Mobil Geliştirici</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const savedTheme = localStorage.getItem("core-theme");
+      const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Eda Nur Ergüven ana sayfa">
+          <span class="brand-mark" aria-hidden="true">EN</span>
+          <span class="brand-name">Eda Nur Ergüven<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="availability hide-small">
+          <span class="status-dot" aria-hidden="true"></span>
+          Yeni projelere açık
+        </div>
+
+        <nav class="desktop-nav" aria-label="Ana navigasyon">
+          <a href="#projects">Projeler</a>
+          <a href="#fit">Yaklaşımım</a>
+          <a href="#lab">Etkileşimler</a>
+          <a href="#capabilities">Yetkinlikler</a>
+          <a href="#experience">Deneyim</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="language-switch header-language" role="group" aria-label="Dil seçimi">
+            <button type="button" class="active" data-language="tr" aria-pressed="true">TR</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <button class="icon-button theme-toggle" type="button" aria-label="Koyu temaya geç" title="Temayı değiştir">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z" /></svg>
+          </button>
+          <a class="button button-small hide-mobile" href="#contact">İletişim</a>
+          <button class="icon-button menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobil navigasyon">
+        <a href="#projects">Projeler</a>
+        <a href="#fit">Yaklaşımım</a>
+        <a href="#lab">Etkileşimler</a>
+        <a href="#capabilities">Yetkinlikler</a>
+        <a href="#experience">Deneyim</a>
+        <a href="#contact">İletişim</a>
+        <div class="mobile-language-row">
+          <span>Dil</span>
+          <div class="language-switch" role="group" aria-label="Dil seçimi">
+            <button type="button" class="active" data-language="tr" aria-pressed="true">TR</button>
+            <button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Yeni Mezun · Full-Stack & Mobil Geliştirici
+          </div>
+          <h1 id="hero-title">
+            Karmaşık fikirleri
+            <span class="gradient-text">sade ve güvenilir</span>
+            ürünlere dönüştürüyorum.
+          </h1>
+          <p class="hero-lead">
+            Bilgisayar Mühendisliği mezunuyum; modern web arayüzlerini, sağlam backend servislerini ve çapraz platform mobil deneyimleri uçtan uca geliştiriyorum.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Seçilmiş işler
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+            </a>
+            <a class="button button-secondary" href="#contact">İletişime geç</a>
+            <button class="button button-tour" id="tour-open" type="button">
+              <span class="play-dot" aria-hidden="true">▶</span>
+              60 sn hızlı tur
+            </button>
+          </div>
+          <div class="proof-strip" aria-label="Öne çıkan metrikler">
+            <div><strong>Web + Mobil</strong><span>Çapraz platform</span></div>
+            <div><strong>Full-Stack</strong><span>Uçtan uca geliştirme</span></div>
+            <div><strong>AI Destekli</strong><span>Modern ürün yaklaşımı</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Canlı ürün telemetrisi görselleştirmesi">
+          <div class="visual-orbit" aria-hidden="true"></div>
+          <article class="system-card system-card-map">
+            <header>
+              <span><i class="tiny-dot purple"></i> BAY_MESH.GLB</span>
+              <span class="mono success">ONLINE</span>
+            </header>
+            <svg class="mesh-chart" viewBox="0 0 360 150" role="img" aria-label="İzmir Körfezi yüzey ağı">
+              <defs>
+                <linearGradient id="meshGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#4263eb" />
+                  <stop offset="0.5" stop-color="#7048e8" />
+                  <stop offset="1" stop-color="#0ca678" />
+                </linearGradient>
+              </defs>
+              <g class="mesh-lines">
+                <path d="M0 108C45 44 84 129 130 72s82-14 117 19 73-39 113-9" />
+                <path d="M0 82c53-48 88 21 129-15s87-27 121 3 63-8 110-31" />
+                <path d="M0 128c50-45 92 7 135-21s74 12 118 9 66-39 107-15" />
+              </g>
+              <circle cx="224" cy="82" r="5" fill="url(#meshGradient)" />
+              <circle class="radar-pulse" cx="224" cy="82" r="13" />
+            </svg>
+            <footer><span>İzmir Körfezi</span><span class="mono">Z −34.8m</span></footer>
+          </article>
+
+          <article class="phone-shell">
+            <div class="phone-screen">
+              <div class="phone-island" aria-hidden="true"></div>
+              <div class="phone-topline"><span>09:41</span><span>5G · 87%</span></div>
+              <div class="phone-greeting"><span>Günaydın</span><strong>Şehir şimdi nasıl?</strong></div>
+              <div class="mini-map">
+                <svg viewBox="0 0 260 210" role="img" aria-label="Canlı vapur rotası">
+                  <path class="coast" d="M-5 58c39 20 53 7 86 25s56-2 86 9 46 36 98 20v103H-5Z" />
+                  <path class="route" d="M26 145C70 105 107 133 141 97s60-32 92-62" />
+                  <circle class="route-point" cx="28" cy="144" r="6" />
+                  <circle class="route-point end" cx="232" cy="35" r="6" />
+                  <g class="boat" transform="translate(136 92)"><circle r="14" /><path d="m-7 1 14-6-3 9H-5Z" /></g>
+                </svg>
+                <div class="map-chip"><span class="status-dot"></span> Canlı rota</div>
+              </div>
+              <div class="trip-card">
+                <div><span>Konak → Karşıyaka</span><strong>09 dk</strong></div>
+                <div class="trip-progress"><i></i></div>
+                <small>14.8 knot · sakin deniz</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="system-card system-card-live">
+            <div class="live-head"><span class="live-icon">⌁</span><div><strong>Sefer KD–1402</strong><small>Gerçek zamanlı telemetri</small></div><b>CANLI</b></div>
+            <div class="live-stats"><span><small>Kalkış</small><strong>09:08</strong></span><span><small>Dalga</small><strong>0.42 m</strong></span></div>
+            <div class="signal-row"><span><i class="tiny-dot green"></i> Kalman aktif</span><span class="mono">14.8 kn</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell content-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">01 · SEÇİLMİŞ PROJELER</span><h2 id="projects-title">Sonuç üreten sistemler.</h2></div>
+          <p>Her proje; ürün düşüncesi, teknik derinlik ve ölçülebilir bir kullanıcı etkisi etrafında şekilleniyor.</p>
+        </div>
+
+        <div class="filter-row reveal" role="group" aria-label="Proje filtreleri">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+          <button class="filter-button" type="button" data-filter="product" aria-pressed="false">Ürün</button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">Yapay zekâ</button>
+          <button class="filter-button" type="button" data-filter="systems" aria-pressed="false">Sistem</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal" data-category="product systems">
+            <div class="project-copy">
+              <div class="project-meta"><span>Mobil ürün · Akıllı ulaşım</span><span>2026</span></div>
+              <h3>İzmir Deniz<br />Sefer Asistanı</h3>
+              <p>İZDENİZ açık servisindeki tarifeleri; canlı geri sayım, iskele odaklı akış ve tarife tabanlı 3D körfez haritasıyla birleştiren bağımsız mobil uygulama.</p>
+              <ul class="tag-list" aria-label="Kullanılan teknolojiler"><li>React Native</li><li>Expo</li><li>Three.js</li><li>TypeScript</li></ul>
+              <div class="impact-row"><div><strong>8</strong><span>İç körfez iskelesi</span></div><div><strong>2D / 3D</strong><span>Harita görünümü</span></div></div>
+              <a class="demo-button case-study-link" href="izdeniz.html">
+                <span><i aria-hidden="true">↗</i> Detaylı vaka analizini aç</span><small>Gerçek ekranlar →</small>
+              </a>
+            </div>
+            <a class="project-preview transport-preview real-product-preview" href="izdeniz.html" aria-label="İzmir Deniz vaka analizini aç">
+              <div class="preview-toolbar"><i></i><i></i><i></i><span>İzmir Deniz · gerçek uygulama ekranları</span></div>
+              <div class="real-preview-stage">
+                <div class="preview-phone preview-phone-back"><img src="assets/izdeniz/gulf-map.png" alt="" /></div>
+                <div class="preview-phone preview-phone-front"><img src="assets/izdeniz/home-dark.png" alt="İzmir Deniz uygulamasının koyu tema ana ekranı" /></div>
+                <span class="preview-open">Vaka analizini aç ↗</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="project-card project-compact reveal" data-category="ai product">
+            <div class="project-icon violet">↗</div>
+            <div class="project-meta"><span>Mobil seyahat · GenAI</span><span>iOS · Android</span></div>
+            <h3>Wayra Travel</h3>
+            <p>Konuma göre rota oluşturan; harita, gerçek zamanlı veri, bildirim ve yapay zekâ destekli seyahat önerilerini tek mobil deneyimde birleştiren uygulama.</p>
+            <div class="mini-terminal"><span><i></i> Google Maps + Geolocator</span><code>Gemini · Firebase</code><div class="terminal-bar"><i></i></div></div>
+            <ul class="tag-list"><li>Flutter</li><li>Dart</li><li>Firebase</li></ul>
+            <a class="demo-button" href="wayra.html">
+              <span><i aria-hidden="true">↗</i> Detaylı vaka analizini aç</span><small>30 gerçek ekran →</small>
+            </a>
+          </article>
+
+          <article class="project-card project-compact reveal" data-category="systems product">
+            <div class="project-icon mint">LZ</div>
+            <div class="project-meta"><span>Full-stack web · MERN</span><span>Web</span></div>
+            <h3>Lezz.io</h3>
+            <p>React tabanlı arayüzü; RESTful API, MongoDB veri katmanı ve güvenli kimlik doğrulama akışıyla birleştiren full-stack web platformu.</p>
+            <div class="test-list" aria-label="Teknoloji katmanları"><span><i>✓</i> Arayüz <b>React + Vite</b></span><span><i>✓</i> API <b>Node.js + Express</b></span><span><i>✓</i> Güvenlik <b>JWT + Bcrypt</b></span></div>
+            <ul class="tag-list"><li>React</li><li>MongoDB</li><li>Express</li></ul>
+            <a class="demo-button" href="https://github.com/edaerguven1/Lezz.io" target="_blank" rel="noreferrer">
+              <span><i aria-hidden="true">↗</i> GitHub'da incele</span><small>Kaynak kod →</small>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell content-section fit-section" id="fit" aria-labelledby="fit-title-heading">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">02 · ROL EŞLEŞMESİ</span><h2 id="fit-title-heading">Ekibinizde nerede değer üretirim?</h2></div>
+          <p>Rolü seçin; yaklaşımımın, araç setimin ve katkı biçimimin o pozisyona nasıl uyduğunu görün.</p>
+        </div>
+
+        <div class="fit-console reveal interactive-surface">
+          <div class="fit-tabs" role="tablist" aria-label="Rol seçimi">
+            <span class="fit-tabs-label">ROL SEÇİN</span>
+            <button class="fit-tab active" id="role-fullstack" type="button" role="tab" aria-selected="true" aria-controls="fit-panel" data-role="fullstack"><span>01</span> Full-Stack</button>
+            <button class="fit-tab" id="role-mobile" type="button" role="tab" aria-selected="false" aria-controls="fit-panel" data-role="mobile"><span>02</span> Mobil</button>
+            <button class="fit-tab" id="role-frontend" type="button" role="tab" aria-selected="false" aria-controls="fit-panel" data-role="frontend"><span>03</span> Frontend</button>
+            <div class="fit-availability"><i class="status-dot"></i><span>Yeni fırsatlara açık</span></div>
+          </div>
+
+          <div class="fit-panel" id="fit-panel" role="tabpanel" aria-labelledby="role-fullstack" tabindex="0">
+            <div class="fit-copy">
+              <div class="fit-status"><span class="mono">ROLE_MATCH.EXE</span><b id="fit-code">FULL_STACK</b></div>
+              <p class="fit-overline" id="fit-overline">ÜRÜNÜ UÇTAN UCA SAHİPLENME</p>
+              <h3 id="fit-role-title">Fikirden çalışan ürüne kadar tek akış.</h3>
+              <p id="fit-description">Arayüz, API ve veri katmanını birlikte düşünerek ekipler arasındaki boşlukları azaltan, ölçülebilir ve bakımı kolay ürünler geliştiririm.</p>
+              <div class="fit-points" id="fit-points">
+                <span><i>01</i> Arayüz ile servis sözleşmesini birlikte tasarlarım.</span>
+                <span><i>02</i> Test edilebilir, okunabilir yapı kurarım.</span>
+                <span><i>03</i> Kullanıcı ihtiyacını teknik kararlara bağlarım.</span>
+              </div>
+              <div class="fit-stack" id="fit-stack"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+            </div>
+
+            <div class="role-orbit" aria-hidden="true">
+              <div class="orbit-ring orbit-ring-one"></div>
+              <div class="orbit-ring orbit-ring-two"></div>
+              <div class="orbit-core"><small>ROLE</small><strong id="orbit-core-label">FULL<br />STACK</strong></div>
+              <span class="orbit-node node-one" id="orbit-node-one">UI</span>
+              <span class="orbit-node node-two" id="orbit-node-two">API</span>
+              <span class="orbit-node node-three" id="orbit-node-three">DATA</span>
+              <span class="orbit-node node-four" id="orbit-node-four">TEST</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell content-section" id="lab" aria-labelledby="lab-title">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">03 · ZANAAT LABORATUVARI</span><h2 id="lab-title">Detayları deneyerek geliştiriyorum.</h2></div>
+          <p>Küçük etkileşimler yalnızca dekorasyon değil; anlaşılabilirliği, hızı ve ürün hissini güçlendiren araçlardır.</p>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card reveal">
+            <div class="lab-card-head"><span class="lab-number">A</span><span class="mono" id="click-count">0 TETİKLEME</span></div>
+            <h3>Dokunsal mikro etkileşim</h3>
+            <p>Basınç hissi veren esnek hareket ve anlık durum geri bildirimi.</p>
+            <div class="interaction-stage"><button class="spring-button" id="spring-button" type="button"><span>Çalıştır</span><i></i></button></div>
+          </article>
+          <article class="lab-card dark-card reveal">
+            <div class="lab-card-head"><span class="lab-number">B</span><span class="mono"><b id="fps-value">60</b> FPS</span></div>
+            <h3>Akışkan sinyal yüzeyi</h3>
+            <p>Animasyon temposunu sistem tercihine göre uyarlayan hafif canvas deneyi.</p>
+            <canvas id="wave-canvas" aria-label="Hareketli sinyal dalgası"></canvas>
+          </article>
+          <article class="lab-card reveal">
+            <div class="lab-card-head"><span class="lab-number">C</span><span class="mono">LOD: AUTO</span></div>
+            <h3>Uyarlanabilir mesh</h3>
+            <p>İçerik yoğunluğuna göre sadeleşen görsel veri katmanı.</p>
+            <div class="mesh-demo" aria-hidden="true"></div>
+            <label class="range-label" for="mesh-range"><span>Detay seviyesi</span><output id="mesh-output">72%</output></label>
+            <input id="mesh-range" type="range" min="20" max="100" value="72" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell content-section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">04 · YETENEKLER</span><h2 id="capabilities-title">Ürünün tamamını gören mühendislik.</h2></div>
+          <p>Arayüzden altyapıya, veri hattından kalite güvenceye kadar aynı hedefe odaklanan bütünsel bir yaklaşım.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card reveal"><span class="capability-index">01</span><div class="capability-symbol blue">⌘</div><h3>Web & Mobil Arayüz</h3><p>Farklı ekranlarda tutarlı, hızlı ve kullanıcı odaklı web ve mobil deneyimler geliştiriyorum.</p><ul><li>React / Vite</li><li>React Native / Expo</li><li>Flutter / Dart</li></ul></article>
+          <article class="capability-card reveal"><span class="capability-index">02</span><div class="capability-symbol violet">◇</div><h3>Backend & Veri</h3><p>Arayüzleri güvenli servisler, kimlik doğrulama akışları ve ilişkisel ya da doküman tabanlı veri modelleriyle buluşturuyorum.</p><ul><li>Node.js / Express</li><li>PostgreSQL / MongoDB</li><li>Firebase / RESTful API</li></ul></article>
+          <article class="capability-card reveal"><span class="capability-index">03</span><div class="capability-symbol mint">↯</div><h3>Akıllı Ürün & Kalite</h3><p>Konum servisleri, GenAI entegrasyonları ve uçtan uca testlerle ürünlerin yeteneklerini ve güvenilirliğini artırıyorum.</p><ul><li>Gemini / GenAI</li><li>Google Maps / GPS</li><li>Playwright / E2E</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section-shell content-section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <div><span class="section-kicker">05 · DENEYİM</span><h2 id="experience-title">Sahada öğrenilenler.</h2></div>
+          <p>Teknoloji seçiminden ölçülebilir çıktıya uzanan ürün yolculuklarında üstlendiğim roller.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-date">Ağu 2026 — Eyl 2026</div><div class="timeline-content"><span>İzmir İnovasyon ve Teknoloji A.Ş.</span><h3>Mobil Uygulama Geliştirici · Stajyer</h3><p>İZDENİZ açık API'sini kullanan İzmir Deniz uygulamasında React Native arayüzler, GenAI entegrasyonu ve Playwright E2E testleri geliştirdim.</p><ul class="tag-list"><li>React Native</li><li>GenAI</li><li>Playwright</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">Tem 2024 — Ağu 2024</div><div class="timeline-content"><span>İzmir İnovasyon ve Teknoloji A.Ş.</span><h3>Full-Stack Yazılım Geliştirici · Stajyer</h3><p>Linux sunucu ve ağ kurulumlarının ardından responsive bir form portalı; Node.js, Express ve PostgreSQL tabanlı RESTful API geliştirdim.</p><ul class="tag-list"><li>Node.js</li><li>PostgreSQL</li><li>Linux</li></ul></div></article>
+          <article class="timeline-item reveal"><div class="timeline-date">2026</div><div class="timeline-content"><span>Süleyman Demirel Üniversitesi</span><h3>Bilgisayar Mühendisliği</h3><p>3.21 / 4.00 genel not ortalamasıyla mezun oldum; web, mobil, veritabanı ve gömülü sistem projelerinde çalıştım.</p><ul class="tag-list"><li>GNO 3.21 / 4.00</li><li>İngilizce B1</li></ul></div></article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section reveal" id="contact" aria-labelledby="contact-title">
+        <div class="contact-noise" aria-hidden="true"></div>
+        <div class="contact-copy">
+          <span class="contact-kicker"><i class="status-dot"></i> UZAKTAN & HİBRİT ROLLERE AÇIK</span>
+          <h2 id="contact-title">Heyecan verici bir fikriniz veya açık bir pozisyonunuz mu var? Birlikte iyi bir ürün yaratalım.</h2>
+          <p>Yeni mezun, öğrenmeye açık ve üretmeyi seven bir full-stack & mobil geliştirici arıyorsanız tanışalım.</p>
+        </div>
+        <div class="contact-actions">
+          <button class="copy-button" id="copy-email" type="button" data-email="edanurerguven682@gmail.com"><span>edanurerguven682@gmail.com</span><b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8h11v11H8zM5 16H4V5h11v1" /></svg>Kopyala</b></button>
+          <a class="button contact-button" href="mailto:edanurerguven682@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 7l9 6 9-6" /></svg>E-posta gönder</a>
+        </div>
+        <nav class="contact-links" aria-label="Sosyal bağlantılar ve özgeçmiş">
+          <a href="https://www.linkedin.com/in/eda-nur-erg%C3%BCven-ba850232b" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9v9M6 6v.01M10 18v-5a4 4 0 0 1 8 0v5M10 9v9" /></svg>LinkedIn Profili</a>
+          <i aria-hidden="true"></i>
+          <a href="https://github.com/edaerguven1" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4 4 0 0 0-1-3c3 0 6-2 6-7a5 5 0 0 0-1-3 5 5 0 0 0 0-4s-1 0-4 2a13 13 0 0 0-7 0C5 1 4 1 4 1a5 5 0 0 0 0 4 5 5 0 0 0-1 3c0 5 3 7 6 7a4 4 0 0 0-1 3v4M8 19c-3 1-3-2-4-2" /></svg>GitHub Profili</a>
+          <i aria-hidden="true"></i>
+          <a href="assets/Eda_Nur_Erguven_CV.pdf" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7zM14 3v5h5M12 11v6m-3-3 3 3 3-3" /></svg>CV indir</a>
+        </nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div><a class="brand" href="#top"><span class="brand-mark">EN</span><span class="brand-name">Eda Nur Ergüven<span class="brand-dot">.</span></span></a><p>Full-stack, mobil ve yapay zekâ destekli ürün geliştirme.</p></div>
+      <p>© <span id="current-year"></span> · Şanlıurfa, Türkiye</p>
+      <a class="back-top" href="#top">Yukarı dön ↑</a>
+    </footer>
+
+    <dialog class="tour-dialog" id="portfolio-tour" aria-labelledby="tour-title">
+      <div class="tour-shell">
+        <div class="tour-topbar">
+          <span class="tour-brand"><i></i> 60 SANİYELİK PORTFÖY TURU</span>
+          <button class="tour-close" type="button" aria-label="Turu kapat">×</button>
+        </div>
+        <div class="tour-body">
+          <div class="tour-visual" aria-hidden="true">
+            <span class="tour-step-number" id="tour-step-number">01</span>
+            <div class="tour-code-card">
+              <span class="mono" id="tour-code-label">PROFILE.INIT()</span>
+              <div class="tour-code-lines"><i></i><i></i><i></i><i></i></div>
+              <div class="tour-scanline"></div>
+            </div>
+          </div>
+          <div class="tour-content">
+            <span class="tour-kicker" id="tour-kicker">KISACA BEN</span>
+            <h2 id="tour-title">Ürünün farklı katmanlarını birlikte düşünen yeni mezun geliştirici.</h2>
+            <p id="tour-description">Full-stack ve mobil geliştirmeyi; temiz arayüz, sağlam veri akışı ve kullanıcı ihtiyacı etrafında birleştiriyorum.</p>
+            <ul id="tour-points">
+              <li>Web ve mobil ürün geliştirme</li>
+              <li>TypeScript odaklı modern teknoloji seti</li>
+              <li>Yapay zekâ destekli ürünlere merak</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tour-footer">
+          <div class="tour-progress" aria-label="Tur ilerlemesi"><i class="active"></i><i></i><i></i><i></i></div>
+          <span class="tour-hint">← → tuşlarıyla ilerleyin</span>
+          <div class="tour-actions">
+            <button class="tour-back" type="button" disabled>Geri</button>
+            <button class="tour-next" type="button">Devam <span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="demo-dialog" id="project-demo" aria-labelledby="demo-title">
+      <div class="demo-shell">
+        <header class="demo-header">
+          <div>
+            <span class="demo-badge"><i></i> CANLI OLMAYAN KONSEPT DEMO</span>
+            <h2 id="demo-title">Proje demo görüntüleri</h2>
+          </div>
+          <button class="demo-close" type="button" aria-label="Demo galerisini kapat">×</button>
+        </header>
+
+        <div class="demo-stage-wrap">
+          <button class="demo-arrow demo-prev" type="button" aria-label="Önceki demo ekranı">←</button>
+          <figure class="demo-figure">
+            <div class="demo-stage" id="demo-stage"></div>
+            <figcaption><strong id="demo-screen-title"></strong><span id="demo-screen-description"></span></figcaption>
+          </figure>
+          <button class="demo-arrow demo-next" type="button" aria-label="Sonraki demo ekranı">→</button>
+        </div>
+
+        <footer class="demo-footer">
+          <div class="demo-thumbnails" id="demo-thumbnails" role="tablist" aria-label="Demo ekranları"></div>
+          <div class="demo-counter"><span id="demo-current">01</span> / <span id="demo-total">03</span></div>
+        </footer>
+      </div>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">E-posta adresi kopyalandı</div>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

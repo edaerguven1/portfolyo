@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="İzmir Deniz: React Native, Expo ve Three.js ile geliştirilen bağımsız vapur seferleri uygulamasının ürün ve mühendislik vaka analizi."
+    />
+    <meta name="theme-color" content="#07131f" />
+    <title>İzmir Deniz — Eda Nur Ergüven</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="izdeniz.css" />
+    <script>
+      const savedTheme = localStorage.getItem("core-theme");
+      const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
+    </script>
+  </head>
+  <body id="top" class="case-page">
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="case-header">
+      <div class="case-nav">
+        <a class="case-back" href="index.html#projects" aria-label="Portföydeki projelere dön">
+          <span aria-hidden="true">←</span> Projelere dön
+        </a>
+        <nav aria-label="Vaka analizi bölümleri">
+          <a href="#problem">Problem</a>
+          <a href="#showcase">Ekranlar</a>
+          <a href="#engineering">Mimari</a>
+          <a href="#quality">Kalite</a>
+        </nav>
+        <div class="language-switch case-language" role="group" aria-label="Dil seçimi">
+          <button type="button" class="active" data-language="tr" aria-pressed="true">TR</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="icon-button case-theme-toggle" type="button" aria-label="Koyu temaya geç" title="Temayı değiştir">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="case-hero">
+        <div class="case-shell hero-layout">
+          <div class="case-hero-copy reveal">
+            <div class="case-label"><span></span> MOBİL ÜRÜN · BAĞIMSIZ PROJE · 2026</div>
+            <h1>Vapur saatini bulmayı <em>saniyelere</em> indiren bir İzmir deneyimi.</h1>
+            <p class="hero-lead">
+              İZDENİZ açık servisindeki sefer verilerini; canlı geri sayım, iskele odaklı akış ve tarife tabanlı 3D körfez haritasıyla birleştiren React Native uygulaması.
+            </p>
+            <div class="hero-actions">
+              <a class="case-primary" href="#showcase">Ekranları incele <span>↓</span></a>
+              <a class="case-secondary" href="#engineering">Teknik yaklaşım</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="İzmir Deniz uygulamasının açık ve koyu tema ekranları">
+            <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+            <div class="hero-phone phone-main">
+              <div class="phone-camera" aria-hidden="true"></div>
+              <img src="assets/izdeniz/home-light.png" alt="İzmir Deniz ana ekranı; Pasaport–Karşıyaka seferi ve canlı geri sayım" />
+            </div>
+            <div class="hero-phone phone-secondary" aria-hidden="true">
+              <div class="phone-camera"></div>
+              <img src="assets/izdeniz/home-dark.png" alt="" />
+            </div>
+            <div class="floating-note note-route"><small>SIRADAKİ SEFER</small><b>Pasaport → Karşıyaka</b></div>
+            <div class="floating-note note-map"><span aria-hidden="true">⌁</span><b>2D / 3D Körfez</b></div>
+          </div>
+
+          <dl class="hero-facts reveal" aria-label="Proje özeti">
+            <div><dt>Rolüm</dt><dd>Ürün tasarımı &amp; uçtan uca geliştirme</dd></div>
+            <div><dt>Durum</dt><dd>Çalışan bağımsız MVP</dd></div>
+            <div><dt>Platform</dt><dd>iOS · Android · Web</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="case-summary case-shell reveal" aria-label="Teknoloji özeti">
+        <div><span>01</span><small>UYGULAMA</small><strong>React Native + Expo 54</strong></div>
+        <div><span>02</span><small>GÖRSEL KATMAN</small><strong>Three.js / React Three Fiber</strong></div>
+        <div><span>03</span><small>VERİ &amp; DURUM</small><strong>İZDENİZ API + Context</strong></div>
+        <div><span>04</span><small>KALİTE</small><strong>TypeScript · Jest · Playwright</strong></div>
+      </section>
+
+      <section class="case-section case-shell" id="problem" aria-labelledby="problem-title">
+        <div class="section-intro reveal">
+          <span class="section-index">01 / PROBLEM</span>
+          <h2 id="problem-title">Kullanıcı bir tablo değil, doğru anda doğru cevabı istiyor.</h2>
+          <p>Temel ürün sorusu basitti: “Bulunduğum iskeleden bir sonraki uygun vapur ne zaman kalkıyor?” Deneyimi bu tek kararı hızlandıracak şekilde kurdum.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <span>01</span>
+            <h3>Dağınık bilgi</h3>
+            <p>İskele, yön, aktarma ve saat bilgisini ayrı ayrı aramak günlük kullanımda gereksiz bilişsel yük oluşturuyor.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span>02</span>
+            <h3>Zaman baskısı</h3>
+            <p>“09:30” tek başına yeterli değil. Kullanıcı kalkışa kaç dakika ve saniye kaldığını anında görmek istiyor.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span>03</span>
+            <h3>Bağlam eksikliği</h3>
+            <p>Sefer listesi; rota, ara durak, yol tarifi ve hatırlatıcı gibi yolculuk kararlarını tek akışta birleştirmeli.</p>
+          </article>
+        </div>
+        <div class="solution-statement reveal">
+          <span>ÜRÜN PRENSİBİ</span>
+          <p>Önce sıradaki seferi göster. Ayrıntıyı ihtiyaç anında aç. Haritayı gerçek konum iddiası taşımadan, tarife tabanlı tahmini hareket olarak anlat.</p>
+        </div>
+      </section>
+
+      <section class="showcase-section" id="showcase" aria-labelledby="showcase-title">
+        <div class="case-shell">
+          <div class="section-intro section-intro-light reveal">
+            <span class="section-index">02 / ETKİLEŞİMLİ GALERİ</span>
+            <h2 id="showcase-title">Uygulamanın kendisi konuşsun.</h2>
+            <p>Kategoriyi veya küçük ekranları seçerek ürün akışını inceleyebilirsin. Büyük görsele dokunmak tam ekran görünümü açar.</p>
+          </div>
+
+          <div class="gallery-layout reveal">
+            <div class="gallery-copy">
+              <div class="gallery-tabs" role="tablist" aria-label="Ekran kategorileri">
+                <button class="gallery-tab active" type="button" role="tab" aria-selected="true" data-gallery-filter="core">Ana akış</button>
+                <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-filter="map">Harita</button>
+                <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-filter="onboarding">Karşılama</button>
+                <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-gallery-filter="theme">Koyu tema</button>
+              </div>
+              <div class="gallery-narrative" aria-live="polite">
+                <span id="gallery-count">01 / 04</span>
+                <h3 id="gallery-title">Sıradaki sefer, ilk bakışta</h3>
+                <p id="gallery-description">Seçili iskele, rota, kalkış saati ve saniyelik geri sayım aynı karar alanında buluşuyor.</p>
+                <ul id="gallery-points">
+                  <li>Tek bakışta rota ve süre</li>
+                  <li>Sonraki seferlere hızlı erişim</li>
+                  <li>Yol tarifi ve favori eylemleri</li>
+                </ul>
+              </div>
+              <div class="gallery-controls">
+                <button class="gallery-arrow gallery-prev" type="button" aria-label="Önceki ekran">←</button>
+                <div class="gallery-progress"><i></i></div>
+                <button class="gallery-arrow gallery-next" type="button" aria-label="Sonraki ekran">→</button>
+              </div>
+            </div>
+
+            <button class="gallery-device" type="button" aria-label="Seçili ekranı tam boy aç">
+              <span class="device-island" aria-hidden="true"></span>
+              <img id="gallery-main-image" src="assets/izdeniz/home-light.png" alt="İzmir Deniz ana ekranı" />
+            </button>
+
+            <div class="gallery-thumbs" id="gallery-thumbs" aria-label="Galeri ekranları"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-shell" aria-labelledby="flow-title">
+        <div class="section-intro reveal">
+          <span class="section-index">03 / ÜRÜN AKIŞI</span>
+          <h2 id="flow-title">Dört adımda yolculuk planı.</h2>
+          <p>Akış, ilk açılıştan hareket anına kadar her ekranda tek bir ana karar bırakacak şekilde sadeleştirildi.</p>
+        </div>
+        <ol class="flow-grid">
+          <li class="flow-card reveal"><span>01</span><b>Ana iskeleyi seç</b><p>Yakındaki veya favori iskeleyi sabitle.</p></li>
+          <li class="flow-card reveal"><span>02</span><b>Sıradaki seferi gör</b><p>Yönü ve kalan süreyi saniyesiyle takip et.</p></li>
+          <li class="flow-card reveal"><span>03</span><b>Rotayı incele</b><p>Ara durakları ve tahmini varışı aç.</p></li>
+          <li class="flow-card reveal"><span>04</span><b>Hatırlatıcı kur</b><p>Yaklaşan kalkışları tek yerde yönet.</p></li>
+        </ol>
+        <div class="flow-visuals reveal">
+          <figure><img src="assets/izdeniz/pier-selector.png" alt="Koyu temada iskele seçim ekranı" /><figcaption>İskele seçimi</figcaption></figure>
+          <figure><img src="assets/izdeniz/trip-detail.png" alt="Pasaport–Bostanlı sefer detay ekranı" /><figcaption>Rota ve ara durak</figcaption></figure>
+          <figure><img src="assets/izdeniz/notifications.png" alt="Aktif sefer hatırlatıcıları ekranı" /><figcaption>Hatırlatıcı yönetimi</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="engineering-section" id="engineering" aria-labelledby="engineering-title">
+        <div class="case-shell">
+          <div class="engineering-heading reveal">
+            <span class="section-index">04 / MÜHENDİSLİK</span>
+            <h2 id="engineering-title">Güvenilir veri, korunmuş bağlam, akıcı harita.</h2>
+            <p>Mimari; ağ dalgalanmalarında kullanılabilir kalmak, 3D sahneyi sekmeler arasında korumak ve veri kaynağının sınırlarını kullanıcıya doğru anlatmak üzerine kuruldu.</p>
+          </div>
+
+          <div class="architecture reveal" aria-label="Uygulama veri akışı">
+            <div class="arch-node"><small>01 · KAYNAK</small><b>İZDENİZ Açık Servisi</b><span>İskeleler ve günlük tarifeler</span></div>
+            <i aria-hidden="true">→</i>
+            <div class="arch-node"><small>02 · VERİ KATMANI</small><b>Repository + Önbellek</b><span>Şema doğrulama ve son geçerli veri</span></div>
+            <i aria-hidden="true">→</i>
+            <div class="arch-node"><small>03 · DURUM</small><b>React Context</b><span>Seçim, tema, geri sayım ve bildirimler</span></div>
+            <i aria-hidden="true">→</i>
+            <div class="arch-node"><small>04 · DENEYİM</small><b>Mobil UI + 3D Harita</b><span>NativeWind ve React Three Fiber</span></div>
+          </div>
+
+          <div class="decision-grid">
+            <article class="decision-card reveal">
+              <span class="decision-icon">≈</span>
+              <h3>Tahmin, gerçek konum değil</h3>
+              <p>Haritadaki vapur hareketi tarifeden hesaplanıyor. Ürün metni bunu GPS/AIS verisi gibi göstermiyor; güven sınırı açıkça korunuyor.</p>
+            </article>
+            <article class="decision-card reveal">
+              <span class="decision-icon">◇</span>
+              <h3>3D sahne yeniden kurulmaz</h3>
+              <p>Harita ilk ziyarette oluşturuluyor, sekme değişimlerinde bellekte tutuluyor; uygulama arka plana geçtiğinde render ve sorgular duraklatılıyor.</p>
+            </article>
+            <article class="decision-card reveal">
+              <span class="decision-icon">↺</span>
+              <h3>Önce kullanılabilir veri</h3>
+              <p>Güncel önbellek yeniden kullanılıyor; eski ama geçerli tarife ağ yanıtı beklenirken gösterilebiliyor ve başarısız yenileme mevcut veriyi silmiyor.</p>
+            </article>
+          </div>
+
+          <div class="map-feature reveal">
+            <div class="map-copy">
+              <span class="case-label"><span></span> TARİFE TABANLI FİLO GÖRÜNÜMÜ</span>
+              <h3>İzmir Körfezi’ni yalnızca liste değil, mekân olarak da anlatmak.</h3>
+              <p>Sekiz iç körfez iskelesi, yolcu ve arabalı vapur filtreleri, rota katmanı, yakınlaştırma ve 2D/3D kamera modu aynı sahnede çalışıyor.</p>
+              <ul>
+                <li>Aktif seferleri kavisli rotalarda konumlandırma</li>
+                <li>Varış anında gemiyi sahneden kaldırma</li>
+                <li>İskele modellerini aşamalı hazırlama</li>
+              </ul>
+            </div>
+            <button class="map-shot" type="button" data-lightbox-index="4" aria-label="3D körfez haritasını tam boy aç">
+              <img src="assets/izdeniz/gulf-map.png" alt="İzmir Körfezi 3D haritası ve tahmini vapur rotaları" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-shell" id="quality" aria-labelledby="quality-title">
+        <div class="section-intro reveal">
+          <span class="section-index">05 / KALİTE</span>
+          <h2 id="quality-title">Sadece iyi görünen değil, davranışı doğrulanan bir ürün.</h2>
+          <p>Proje deposunda veri katmanı, harita motoru, önbellek, bildirimler ve kritik kullanıcı akışları için otomatik kontroller bulunuyor.</p>
+        </div>
+        <div class="quality-layout">
+          <div class="quality-console reveal" aria-label="Doğrulanan test alanları">
+            <header><span></span><span></span><span></span><code>quality/checks</code></header>
+            <div class="console-line"><i>✓</i><span>API sözleşmesi ve null alan davranışı</span><b>JEST</b></div>
+            <div class="console-line"><i>✓</i><span>Tarife önbelleği ve gün değişimi</span><b>JEST</b></div>
+            <div class="console-line"><i>✓</i><span>Harita filo motoru ve rota geometrisi</span><b>JEST</b></div>
+            <div class="console-line"><i>✓</i><span>3D kaynak yaşam döngüsü</span><b>JEST</b></div>
+            <div class="console-line"><i>✓</i><span>94 birim, veri ve harita testi</span><b>18 SUITE</b></div>
+            <div class="console-line"><i>✓</i><span>6 kritik tarayıcı kullanıcı akışı</span><b>E2E</b></div>
+          </div>
+          <div class="quality-stats reveal">
+            <div><strong>8</strong><span>İç körfez iskelesi</span></div>
+            <div><strong>2D / 3D</strong><span>Kamera modu</span></div>
+            <div><strong>94</strong><span>Geçen otomatik test</span></div>
+            <div><strong>3</strong><span>Hedef platform</span></div>
+          </div>
+        </div>
+
+        <aside class="integrity-note reveal">
+          <span>ŞEFFAFLIK NOTU</span>
+          <div>
+            <h3>Bu, İZDENİZ’in resmî uygulaması değildir.</h3>
+            <p>Bağımsız bir ürün geliştirme projesidir. Kesin ve son dakika bilgileri için resmî İZDENİZ kanalları esas alınmalıdır. Haritadaki hareketler GPS/AIS değil, tarife verisine dayalı tahmindir.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="case-outro">
+        <div class="case-shell outro-layout reveal">
+          <div>
+            <span class="section-index">PROJE ÖZETİ</span>
+            <h2>Ürün kararından veri katmanına kadar uçtan uca geliştirme.</h2>
+          </div>
+          <p>Bu proje; mobil arayüz, erişilebilir etkileşim, harita görselleştirme, API dayanıklılığı ve otomatik testleri aynı kullanıcı problemi etrafında birleştirebildiğimi gösteriyor.</p>
+          <a class="case-primary" href="index.html#projects">Diğer projelere dön <span>→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer case-shell">
+      <a class="brand" href="index.html" aria-label="Eda Nur Ergüven portföy ana sayfası"><span class="brand-mark">EN</span><span class="brand-name">Eda Nur Ergüven<span class="brand-dot">.</span></span></a>
+      <p>İzmir Deniz · Ürün ve mühendislik vaka analizi</p>
+      <a href="#top">Yukarı dön ↑</a>
+    </footer>
+
+    <dialog class="image-lightbox" id="image-lightbox" aria-labelledby="lightbox-title">
+      <div class="lightbox-shell">
+        <header>
+          <div><span>UYGULAMA EKRANI</span><h2 id="lightbox-title">İzmir Deniz</h2></div>
+          <button class="lightbox-close" type="button" aria-label="Tam ekran görseli kapat">×</button>
+        </header>
+        <div class="lightbox-stage">
+          <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Önceki görsel">←</button>
+          <img id="lightbox-image" src="assets/izdeniz/home-light.png" alt="" />
+          <button class="lightbox-arrow lightbox-next" type="button" aria-label="Sonraki görsel">→</button>
+        </div>
+        <footer><p id="lightbox-caption"></p><span id="lightbox-counter">01 / 10</span></footer>
+      </div>
+    </dialog>
+
+    <script src="i18n.js"></script>
+    <script src="izdeniz.js"></script>
+  </body>
+</html>
