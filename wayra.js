@@ -86,7 +86,7 @@ const galleryItems = [
     title: { tr: "Rotanın bağlamını kur", en: "Build the route context" },
     description: { tr: "Şehir, tarih, başlangıç noktası ve seyahat grubu; önerinin nerede, ne zaman ve kimler için üretileceğini belirliyor.", en: "City, dates, start point, and travel group define where, when, and for whom the route is generated." },
     points: { tr: ["Her ekranda tek karar", "Sekiz parçalı ilerleme", "Mevcut konumu kullanma"], en: ["One decision per screen", "Eight-part progress", "Use current location"] },
-    images: [1, 2, 3, 4].map((step) => ({ src: `assets/wayra/plan-step-${step}.png`, alt: { tr: `Wayra planlama adımı ${step}`, en: `Wayra planning step ${step}` } })),
+    images: [1, 2, 3, 4].map((step) => ({ src: `assets/wayra/plan-step-${step}.webp`, alt: { tr: `Wayra planlama adımı ${step}`, en: `Wayra planning step ${step}` } })),
   },
   {
     category: "planner",
@@ -95,7 +95,7 @@ const galleryItems = [
     title: { tr: "Rotayı kişiselleştir", en: "Personalize the route" },
     description: { tr: "Ulaşım, bütçe, ruh hâli, günlük saat aralığı, gizlilik ve ilgi alanları rotanın karakterini belirliyor.", en: "Transport, budget, mood, daily hours, privacy, and interests shape the route's character." },
     points: { tr: ["Lojistik kısıtlar", "Bütçe ve duygu bağlamı", "Çoklu ilgi alanı seçimi"], en: ["Logistics constraints", "Budget and mood context", "Multi-interest selection"] },
-    images: [5, 6, 7, 8].map((step) => ({ src: `assets/wayra/plan-step-${step}.png`, alt: { tr: `Wayra planlama adımı ${step}`, en: `Wayra planning step ${step}` } })),
+    images: [5, 6, 7, 8].map((step) => ({ src: `assets/wayra/plan-step-${step}.webp`, alt: { tr: `Wayra planlama adımı ${step}`, en: `Wayra planning step ${step}` } })),
   },
   {
     category: "social",
