@@ -128,16 +128,13 @@ html, body { width: 100%; max-width: 100%; overflow-x: clip; }
 .experience-card h3 { margin: auto 0 10px; font-family: var(--display); font-size: 22px; }
 .experience-card p { margin: 0; color: var(--muted); font-size: 14px; }
 .responsive-story { margin-top: 80px; padding: clamp(28px, 5vw, 64px); display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(38px, 8vw, 100px); align-items: center; overflow: hidden; border: 1px solid var(--border); border-radius: 32px; background: radial-gradient(circle at 15% 28%, rgba(196,122,49,.16), transparent 30%), var(--surface-soft); }
-.phone-device { position: relative; width: min(300px, 70vw); margin: 0 auto; padding-bottom: 34px; transform: rotate(-3deg); }
-.phone-frame { position: relative; width: 100%; height: 540px; padding: 9px; border: 1px solid #453c34; border-radius: 47px; background: linear-gradient(145deg, #2f2924, #080706 38%, #1b1714); box-shadow: 0 36px 80px rgba(35,20,8,.38), inset 0 0 0 1px rgba(255,255,255,.08); }
+.phone-device { position: relative; width: min(254px, 66vw); margin: 0 auto; padding-bottom: 34px; transform: rotate(-2deg); }
+.phone-frame { position: relative; width: 100%; height: auto; aspect-ratio: 383 / 815; padding: 9px; border: 1px solid #453c34; border-radius: 43px; background: linear-gradient(145deg, #2f2924, #080706 38%, #1b1714); box-shadow: 0 36px 80px rgba(35,20,8,.38), inset 0 0 0 1px rgba(255,255,255,.08); }
 .phone-frame::before { content: ""; position: absolute; inset: 4px; z-index: 0; border: 1px solid rgba(255,255,255,.08); border-radius: 43px; pointer-events: none; }
 .phone-island { position: absolute; z-index: 4; top: 18px; left: 50%; width: 78px; height: 22px; border-radius: 999px; background: #020202; box-shadow: inset 0 0 0 1px rgba(255,255,255,.045); transform: translateX(-50%); pointer-events: none; }
 .phone-island::after { content: ""; position: absolute; top: 8px; right: 10px; width: 5px; height: 5px; border-radius: 50%; background: #17212a; box-shadow: 0 0 0 2px #080b0d; }
-.phone-screen { position: relative; width: 100%; height: 100%; padding: 0; display: flex; flex-direction: column; overflow: hidden; border: 0; border-radius: 38px; color: #a98c73; background: #11100f; cursor: zoom-in; }
-.phone-screen img { width: 100%; height: auto; display: block; }
-.phone-screen-continuation { flex: 1; min-height: 0; display: grid; place-items: center; align-content: center; gap: 10px; background: linear-gradient(180deg, #11100f, #080706); }
-.phone-screen-continuation i { width: 32px; height: 1px; background: var(--copper); box-shadow: 0 0 16px rgba(196,122,49,.55); }
-.phone-screen-continuation small { font-family: var(--mono); font-size: 6px; letter-spacing: .15em; }
+.phone-screen { position: relative; width: 100%; height: 100%; padding: 0; display: block; overflow: hidden; border: 0; border-radius: 34px; color: #a98c73; background: #11100f; cursor: zoom-in; }
+.phone-screen img { width: 100%; height: 100%; display: block; object-fit: contain; object-position: top; background: #0f0e0d; }
 .phone-home-indicator { position: absolute; z-index: 4; left: 50%; bottom: 17px; width: 92px; height: 4px; border-radius: 999px; background: rgba(255,255,255,.78); transform: translateX(-50%); pointer-events: none; }
 .phone-button { position: absolute; z-index: -1; width: 4px; border-radius: 3px; background: #3b332d; }
 .phone-volume-up { top: 123px; left: -4px; height: 53px; }
@@ -307,9 +304,9 @@ html[data-theme="light"] .outro-layout > p { color: var(--muted); }
   .experience-card { grid-template-columns: 1fr; }
   .experience-card > div { min-height: 200px; }
   .responsive-story { margin-top: 55px; padding: 28px 18px; }
-  .phone-device { width: min(245px, 76vw); }
-  .phone-frame { height: 455px; border-radius: 41px; }
-  .phone-screen { border-radius: 33px; }
+  .phone-device { width: min(218px, 64vw); }
+  .phone-frame { height: auto; border-radius: 38px; }
+  .phone-screen { border-radius: 30px; }
   .video-kicker { display: none; }
   .video-toggle b { display: none; }
   .video-toggle { min-width: 38px; padding: 0 7px; }
