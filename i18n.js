@@ -179,6 +179,11 @@
     "Arayüzleri güvenli servisler, kimlik doğrulama akışları ve ilişkisel ya da doküman tabanlı veri modelleriyle buluşturuyorum.": "I connect interfaces with secure services, authentication flows, and relational or document-based data models.",
     "Akıllı Ürün & Kalite": "Smart Products & Quality",
     "Konum servisleri, GenAI entegrasyonları ve uçtan uca testlerle ürünlerin yeteneklerini ve güvenilirliğini artırıyorum.": "I enhance product capability and reliability with location services, GenAI integrations, and end-to-end testing.",
+    "Three.js / 2D–3D Harita": "Three.js / 2D–3D Maps",
+    "Araçlar & Yayın": "Tooling & Delivery",
+    "Sürüm kontrolü, yayınlama ve temel sistem bilgisiyle projeleri geliştirmeden canlıya kadar taşıyorum.": "I take projects from development to production with version control, deployment, and core systems knowledge.",
+    "Linux / Ağ Kurulumu": "Linux / Network Setup",
+    "Responsive / Erişilebilirlik": "Responsive / Accessibility",
 
     "05 · DENEYİM": "05 · EXPERIENCE",
     "Sahada öğrenilenler.": "Lessons learned in practice.",
