@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bakır Cosmetic: 147 ürünlük profesyonel kozmetik kataloğu, dinamik ürün detayları ve salon tasarımı hizmetlerini birleştiren responsive web sitesi vaka analizi." />
+    <meta name="theme-color" content="#0d0c0b" />
+    <title>Bakır Cosmetic — Eda Nur Ergüven</title>
+    <link rel="canonical" href="https://portfolyo-snowy.vercel.app/bakir.html" />
+    <meta property="og:title" content="Bakır Cosmetic — Eda Nur Ergüven" />
+    <meta property="og:description" content="Profesyonel kozmetik kataloğu ve salon hizmetlerini dijital satış deneyiminde birleştiren responsive web projesi." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://portfolyo-snowy.vercel.app/bakir.html" />
+    <meta property="og:image" content="https://portfolyo-snowy.vercel.app/assets/bakir/home.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="bakir.css" />
+    <script>
+      const savedTheme = localStorage.getItem("core-theme");
+      const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
+    </script>
+  </head>
+  <body id="top" class="bakir-page">
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+    <header class="case-header">
+      <div class="case-nav">
+        <a class="case-back" href="index.html#projects" aria-label="Portföydeki projelere dön"><span aria-hidden="true">←</span> Projelere dön</a>
+        <nav aria-label="Vaka analizi bölümleri">
+          <a href="#overview">Ürün</a>
+          <a href="#catalog">Katalog</a>
+          <a href="#experience">Deneyim</a>
+          <a href="#technology">Teknoloji</a>
+        </nav>
+        <div class="language-switch case-language" role="group" aria-label="Dil seçimi">
+          <button type="button" class="active" data-language="tr" aria-pressed="true">TR</button>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="icon-button case-theme-toggle" type="button" aria-label="Açık temaya geç" title="Temayı değiştir">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" /></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="bakir-hero">
+        <div class="case-shell hero-layout">
+          <div class="hero-copy reveal">
+            <div class="case-label"><span></span> KURUMSAL WEB · ÜRÜN KATALOĞU · RESPONSIVE</div>
+            <h1>Profesyonel kozmetiği dijital bir <em>satış deneyimine</em> dönüştürmek.</h1>
+            <p class="hero-lead">Bakır Cosmetic; 147 ürünü, 23 markayı, salon tasarımı hizmetini ve doğrudan iletişim kanallarını aynı kurumsal deneyimde birleştiren responsive web platformu.</p>
+            <div class="hero-actions">
+              <a class="case-primary" href="#catalog">Ekranları incele <span>↓</span></a>
+              <a class="case-secondary" href="https://github.com/edaerguven1/BakirCosmetic" target="_blank" rel="noreferrer">GitHub deposu ↗</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="copper-orbit orbit-one" aria-hidden="true"></div>
+            <div class="copper-orbit orbit-two" aria-hidden="true"></div>
+            <button class="browser-window hero-browser media-open" type="button" data-image="assets/bakir/home.webp" data-caption="Bakır Cosmetic ana sayfa ve altı slaytlı ürün vitrini" aria-label="Bakır Cosmetic ana sayfa ekranını büyüt">
+              <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>bakircosmetic.com</b></span>
+              <img src="assets/bakir/home.webp" alt="Bakır Cosmetic ana sayfasında profesyonel saç bakım ürünleri vitrini" />
+              <span class="image-hint">Büyüt ↗</span>
+            </button>
+            <div class="floating-stat stat-products"><small>ÜRÜN VERİTABANI</small><strong>147</strong><span>ürün</span></div>
+            <div class="floating-stat stat-brands"><small>MARKA FİLTRESİ</small><strong>23</strong><span>marka</span></div>
+          </div>
+
+          <dl class="hero-facts reveal" aria-label="Proje özeti">
+            <div><dt>Rolüm</dt><dd>Ürün tasarımı · frontend geliştirme</dd></div>
+            <div><dt>Durum</dt><dd>Tamamlanan kurumsal web sitesi</dd></div>
+            <div><dt>Platform</dt><dd>Responsive web · masaüstü & mobil</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="case-summary case-shell reveal" aria-label="Proje metrikleri">
+        <div><span>01</span><small>KATALOG</small><strong>147 ürün · 23 marka</strong></div>
+        <div><span>02</span><small>KEŞİF</small><strong>Arama · filtre · sayfalama</strong></div>
+        <div><span>03</span><small>DÖNÜŞÜM</small><strong>Ürüne özel WhatsApp akışı</strong></div>
+        <div><span>04</span><small>PERFORMANS</small><strong>Görsellerde %81,5 küçülme</strong></div>
+      </section>
+
+      <section class="case-section case-shell" id="overview" aria-labelledby="overview-title">
+        <div class="section-intro reveal">
+          <span class="section-index">01 / ÜRÜN HEDEFİ</span>
+          <h2 id="overview-title">Katalog göstermekten fazlası: keşiften iletişime kesintisiz yolculuk.</h2>
+          <p>Proje, mağazadaki profesyonel ürün çeşitliliğini dijitale taşırken müşterinin doğru ürünü bulmasını, ayrıntısını incelemesini ve ek form doldurmadan sipariş hattına geçmesini amaçlıyor.</p>
+        </div>
+
+        <div class="value-grid">
+          <article class="value-card reveal"><span>01</span><div class="value-icon">⌕</div><h3>Hızlı ürün keşfi</h3><p>Metin araması, kategori ve marka filtreleri; geniş kataloğu tek bir anlaşılır keşif yüzeyine dönüştürüyor.</p></article>
+          <article class="value-card reveal"><span>02</span><div class="value-icon">↗</div><h3>Doğrudan dönüşüm</h3><p>Dinamik ürün detayından ürüne özel hazırlanmış WhatsApp mesajına geçiş, çevrim içi keşfi gerçek satış görüşmesine bağlıyor.</p></article>
+          <article class="value-card reveal"><span>03</span><div class="value-icon">◇</div><h3>Tek marka deneyimi</h3><p>Ürün kataloğu, salon mimarisi, kurumsal hikâye, PDF kataloglar ve mağaza iletişimi aynı görsel sistemde birleşiyor.</p></article>
+        </div>
+
+        <div class="product-loop reveal" aria-label="Bakır Cosmetic kullanıcı yolculuğu">
+          <div><small>01 · KEŞFET</small><b>Ürünleri tara</b></div><i>→</i>
+          <div><small>02 · DARALT</small><b>Ara ve filtrele</b></div><i>→</i>
+          <div><small>03 · İNCELE</small><b>Detayı aç</b></div><i>→</i>
+          <div><small>04 · İLETİŞİM</small><b>WhatsApp'tan sor</b></div>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="case-shell">
+          <div class="section-intro section-intro-light reveal">
+            <span class="section-index">02 / KATALOG DENEYİMİ</span>
+            <h2 id="catalog-title">147 ürünü sakin, taranabilir ve eyleme dönük tutmak.</h2>
+            <p>Koleksiyon yüzeyi geniş ürün veri tabanını arama, hiyerarşik kategori, marka filtresi ve sayfalama ile yönetiyor. Ürün detayları URL parametresiyle aynı şablonda dinamik olarak kuruluyor.</p>
+          </div>
+
+          <div class="catalog-showcase reveal">
+            <button class="browser-window collection-browser media-open" type="button" data-image="assets/bakir/collection.webp" data-caption="Arama, kategori ve marka filtreli ürün koleksiyonu" aria-label="Koleksiyon ekranını büyüt">
+              <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>/products.html</b></span>
+              <img src="assets/bakir/collection.webp" alt="Bakır Cosmetic kategori ve marka filtreli koleksiyon ekranı" loading="lazy" />
+              <span class="image-hint">Koleksiyon görünümü ↗</span>
+            </button>
+
+            <div class="catalog-copy">
+              <article><span>01</span><div><h3>Üç katmanlı filtreleme</h3><p>Arama ifadesi, kategori ve marka aynı ürün listesi üzerinde birlikte çalışıyor; Türkçe karakterler normalize edilerek daha dayanıklı eşleşme sağlanıyor.</p></div></article>
+              <article><span>02</span><div><h3>Sayfalanmış sonuçlar</h3><p>Sonuç sayısı ve erişilebilir sayfa kontrolleri, katalog büyürken tarama maliyetini kontrol altında tutuyor.</p></div></article>
+              <article><span>03</span><div><h3>Mobil filtre çekmecesi</h3><p>Dar ekranda aynı filtre sistemi dışarı tıklama, kapatma düğmesi ve doğru aria durumlarıyla çekmeceye dönüşüyor.</p></div></article>
+            </div>
+          </div>
+
+          <div class="detail-grid reveal">
+            <div class="detail-copy">
+              <span class="section-index">ÜRÜN DETAYI</span>
+              <h3>Her ürün için ayrı sayfa üretmeden dinamik detay.</h3>
+              <p>Ürün kimliği URL'den okunuyor, veri tabanındaki karşılığı bulunuyor ve başlık, açıklama, marka, görsel ile sipariş mesajı aynı şablona işleniyor.</p>
+              <ul><li>URL parametresi ve hash desteği</li><li>Dinamik sayfa başlığı</li><li>Ürüne özel WhatsApp mesajı</li><li>Eksik ürün için güvenli geri dönüş</li></ul>
+            </div>
+            <button class="browser-window product-browser media-open" type="button" data-image="assets/bakir/product-detail.webp" data-caption="Dinamik ürün detayı ve WhatsApp sipariş çağrısı" aria-label="Ürün detay ekranını büyüt">
+              <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>/product-detail.html?id=…</b></span>
+              <img src="assets/bakir/product-detail.webp" alt="Morfose ürünü için dinamik ürün detay sayfası" loading="lazy" />
+              <span class="image-hint">Ürün detayını büyüt ↗</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section case-shell" id="experience" aria-labelledby="experience-title">
+        <div class="section-intro reveal">
+          <span class="section-index">03 / MARKA DENEYİMİ</span>
+          <h2 id="experience-title">Ürünün yanında hizmeti ve güveni de görünür kılan yapı.</h2>
+          <p>Site yalnızca ürün listesi değil; mağazanın hikâyesini, çalıştığı markaları, salon tasarımı sürecini ve fiziksel iletişim noktalarını da dijital ürünün parçası yapıyor.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <button class="media-open" type="button" data-image="assets/bakir/about.webp" data-caption="Kurumsal hikâye ve mağaza deneyimi" aria-label="Kurumsal sayfayı büyüt"><img src="assets/bakir/about.webp" alt="Bakır Cosmetic kurumsal sayfası" loading="lazy" /></button>
+            <div><small>01 · KURUMSAL</small><h3>Hikâye ve marka güveni</h3><p>Mağaza geçmişi, değerler ve çalışılan profesyonel markalar tek kurumsal anlatıda birleşiyor.</p></div>
+          </article>
+          <article class="experience-card reveal">
+            <button class="media-open" type="button" data-image="assets/bakir/studio.webp" data-caption="Salon tasarımı hizmeti ve dört adımlı kurumsal süreç" aria-label="Salon tasarımı sayfasını büyüt"><img src="assets/bakir/studio.webp" alt="Bakır Cosmetic salon tasarımı hizmet sayfası" loading="lazy" /></button>
+            <div><small>02 · STUDIO BAKIR</small><h3>Hizmeti görselleştir</h3><p>Dört adımlı salon yenileme süreci ve klavyeyle kullanılabilen proje carousel'i hizmeti somutlaştırıyor.</p></div>
+          </article>
+          <article class="experience-card reveal">
+            <button class="media-open" type="button" data-image="assets/bakir/contact.webp" data-caption="Adres, harita, çalışma saatleri ve hızlı iletişim kanalları" aria-label="İletişim sayfasını büyüt"><img src="assets/bakir/contact.webp" alt="Bakır Cosmetic iletişim ve konum sayfası" loading="lazy" /></button>
+            <div><small>03 · İLETİŞİM</small><h3>Dijitalden mağazaya</h3><p>Adres, telefon, WhatsApp, Instagram, çalışma saatleri ve harita aynı dönüşüm yüzeyinde sunuluyor.</p></div>
+          </article>
+        </div>
+
+        <div class="responsive-story reveal">
+          <div class="phone-frame">
+            <span aria-hidden="true"></span>
+            <img src="assets/bakir/mobile-home.webp" alt="Bakır Cosmetic mobil ana sayfa" loading="lazy" />
+          </div>
+          <div class="responsive-copy">
+            <span class="section-index">MOBİL UYARLAMA</span>
+            <h3>Aynı marka dili, daha odaklı bir mobil yolculuk.</h3>
+            <p>Masaüstündeki geniş vitrin; mobil menü, merkezlenmiş ürün mesajı, dokunmatik slider kontrolleri ve sabit hızlı iletişim eylemleriyle dar ekrana yeniden düzenleniyor.</p>
+            <ul><li>Hamburger menü ve doğru aria durumları</li><li>Dokunmatik hero slider</li><li>WhatsApp ve arama için hızlı iletişim barı</li><li>Mobil filtre çekmecesi ve dışarı tıklamayla kapatma</li></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="engineering-section" id="technology" aria-labelledby="technology-title">
+        <div class="case-shell">
+          <div class="engineering-heading reveal">
+            <span class="section-index">04 / TEKNİK YAKLAŞIM</span>
+            <h2 id="technology-title">Derleme gerektirmeyen, veri odaklı ve kolay yayınlanabilir frontend mimarisi.</h2>
+            <p>GitHub deposundaki proje; semantik HTML, sayfa bazlı CSS/JavaScript, statik ürün veri tabanı ve yeniden kullanılan etkileşim modülleriyle kurulmuş.</p>
+          </div>
+
+          <div class="architecture reveal" aria-label="Bakır Cosmetic teknik mimarisi">
+            <div class="arch-node"><small>SUNUM</small><b>Semantik HTML</b><span>Sekiz yayın sayfası, doğru başlık ve landmark yapısı</span></div><i>→</i>
+            <div class="arch-node"><small>ETKİLEŞİM</small><b>Vanilla JavaScript</b><span>Slider, filtre, sayfalama, modal ve carousel davranışları</span></div><i>→</i>
+            <div class="arch-node"><small>VERİ</small><b>Statik ürün DB</b><span>147 ürünün tek kaynak üzerinden katalog ve detaya aktarılması</span></div><i>→</i>
+            <div class="arch-node"><small>DÖNÜŞÜM</small><b>WhatsApp + Maps</b><span>Ürün sorgusu, mağaza iletişimi ve yol tarifi bağlantıları</span></div>
+          </div>
+
+          <div class="tech-grid">
+            <article class="tech-card reveal"><span>01</span><h3>Veri odaklı katalog</h3><p>Ürün kartları ve detay sayfası aynı JavaScript veri kaynağından besleniyor; marka adları normalize edilerek filtre tutarlılığı korunuyor.</p><code>product DB → filter → pagination → detail</code></article>
+            <article class="tech-card reveal"><span>02</span><h3>Erişilebilir etkileşimler</h3><p>Mobil menü aria durumları, KVKK modal odak döngüsü, klavye kontrollü carousel ve içerik atlama bağlantısı temel akışlarda erişilebilirlik sağlıyor.</p><code>focus → state → keyboard → restore</code></article>
+            <article class="tech-card reveal"><span>03</span><h3>Performans disiplini</h3><p>Görseller WebP'e dönüştürüldü; ekran dışı içerikler lazy loading ve async decoding ile yüklendi.</p><code>121,46 MB → 22,44 MB</code></article>
+          </div>
+
+          <div class="performance-card reveal">
+            <div><span>GÖRSEL KLASÖRÜ</span><strong>121,46 MB</strong><small>önce</small></div>
+            <div class="performance-line" aria-label="Görsel klasöründe yüzde 81,5 küçülme"><i></i><b>−81,5%</b></div>
+            <div><span>OPTİMİZE BOYUT</span><strong>22,44 MB</strong><small>sonra</small></div>
+          </div>
+
+          <div class="repo-note reveal">
+            <div><span>DOĞRULANAN TEKNOLOJİLER</span><h3>HTML5 · CSS3 · Vanilla JavaScript</h3><p>Teknik anlatım, GitHub deposundaki kaynak kod, ürün veri tabanı ve yayın kontrol belgeleri üzerinden hazırlanmıştır.</p></div>
+            <a class="case-primary" href="https://github.com/edaerguven1/BakirCosmetic" target="_blank" rel="noreferrer">Kaynak kodu incele ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-outro">
+        <div class="case-shell outro-layout reveal">
+          <div><span class="section-index">BAKIR COSMETIC</span><h2>Ürün, hizmet ve fiziksel mağazayı aynı dijital vitrinde buluşturan kurumsal deneyim.</h2></div>
+          <p>147 ürün, 23 marka, dinamik detay sayfaları ve satışa bağlanan iletişim akışları; ölçeklenebilir bir statik web mimarisinde bir araya geliyor.</p>
+          <a class="case-primary" href="index.html#projects">Diğer projelere dön <span>→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="case-footer case-shell">
+      <a class="brand" href="index.html" aria-label="Eda Nur Ergüven portföy ana sayfası"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">Eda Nur Ergüven<span class="brand-dot">.</span></span></a>
+      <p>Bakır Cosmetic · Ürün ve frontend vaka analizi</p>
+      <a href="#top">Yukarı dön ↑</a>
+    </footer>
+
+    <dialog class="image-lightbox" id="image-lightbox" aria-labelledby="lightbox-title">
+      <div class="lightbox-shell">
+        <header><div><span>BAKIR COSMETIC · GERÇEK EKRAN</span><h2 id="lightbox-title">Ekran önizlemesi</h2></div><button class="lightbox-close" type="button" aria-label="Önizlemeyi kapat">×</button></header>
+        <div class="lightbox-stage"><button class="lightbox-arrow lightbox-prev" type="button" aria-label="Önceki ekran">←</button><img id="lightbox-image" alt="" /><button class="lightbox-arrow lightbox-next" type="button" aria-label="Sonraki ekran">→</button></div>
+        <footer><p id="lightbox-caption"></p><span id="lightbox-counter"></span></footer>
+      </div>
+    </dialog>
+
+    <script src="bakir.js"></script>
+  </body>
+</html>
