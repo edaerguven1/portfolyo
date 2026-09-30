@@ -23,6 +23,12 @@
     "GitHub deposu ↗": "GitHub repository ↗",
     "Bakır Cosmetic ana sayfa ve altı slaytlı ürün vitrini": "Bakır Cosmetic homepage and six-slide product showcase",
     "Bakır Cosmetic ana sayfa ekranını büyüt": "Enlarge the Bakır Cosmetic homepage screen",
+    "Bakır Cosmetic ana sayfa ekran kaydı": "Bakır Cosmetic homepage screen recording",
+    "GERÇEK EKRAN KAYDI": "REAL SCREEN RECORDING",
+    "Ana sayfa ekran kaydını oynat": "Play homepage screen recording",
+    "Ana sayfa ekran kaydını duraklat": "Pause homepage screen recording",
+    "Ana sayfa akışını oynat": "Play homepage flow",
+    "Akışı duraklat": "Pause flow",
     "Büyüt ↗": "Enlarge ↗",
     "ÜRÜN VERİTABANI": "PRODUCT DATABASE",
     "ürün": "products",
@@ -112,6 +118,10 @@
     "Dokunmatik hero slider": "Touch-enabled hero slider",
     "WhatsApp ve arama için hızlı iletişim barı": "Quick contact bar for WhatsApp and calls",
     "Mobil filtre çekmecesi ve dışarı tıklamayla kapatma": "Mobile filter drawer with outside-click dismissal",
+    "Bakır Cosmetic mobil arayüz önizlemesi": "Bakır Cosmetic mobile interface preview",
+    "Bakır Cosmetic mobil ana sayfa ve hızlı iletişim eylemleri": "Bakır Cosmetic mobile homepage and quick contact actions",
+    "Mobil ana sayfa ekranını büyüt": "Enlarge the mobile homepage screen",
+    "Bakır Cosmetic mobil ana sayfa": "Bakır Cosmetic mobile homepage",
     "04 / TEKNİK YAKLAŞIM": "04 / TECHNICAL APPROACH",
     "Derleme gerektirmeyen, veri odaklı ve kolay yayınlanabilir frontend mimarisi.": "A data-driven, easily deployable frontend architecture with no build step.",
     "GitHub deposundaki proje; semantik HTML, sayfa bazlı CSS/JavaScript, statik ürün veri tabanı ve yeniden kullanılan etkileşim modülleriyle kurulmuş.": "The GitHub project uses semantic HTML, page-level CSS and JavaScript, a static product database and reusable interaction modules.",
@@ -197,6 +207,7 @@
       button.setAttribute("aria-pressed", String(active));
     });
     updateThemeLabel();
+    updateVideoButton();
     if (lightbox?.open) updateLightbox(activeMediaIndex);
   };
 
@@ -217,6 +228,36 @@
     localStorage.setItem("core-theme", nextTheme);
     updateThemeLabel();
   });
+
+  const homeVideo = document.querySelector("#bakir-home-video");
+  const videoBrowser = document.querySelector(".video-browser");
+  const videoToggle = document.querySelector(".video-toggle");
+  const videoToggleIcon = videoToggle?.querySelector("span");
+  const videoToggleText = videoToggle?.querySelector("b");
+
+  function updateVideoButton() {
+    if (!homeVideo || !videoToggle) return;
+    const isPlaying = !homeVideo.paused && !homeVideo.ended;
+    videoBrowser?.classList.toggle("is-playing", isPlaying);
+    if (videoToggleIcon) videoToggleIcon.textContent = isPlaying ? "Ⅱ" : "▶";
+    if (videoToggleText) videoToggleText.textContent = currentLanguage === "en"
+      ? (isPlaying ? "Pause flow" : "Play homepage flow")
+      : (isPlaying ? "Akışı duraklat" : "Ana sayfa akışını oynat");
+    videoToggle.setAttribute("aria-label", currentLanguage === "en"
+      ? (isPlaying ? "Pause homepage screen recording" : "Play homepage screen recording")
+      : (isPlaying ? "Ana sayfa ekran kaydını duraklat" : "Ana sayfa ekran kaydını oynat"));
+  }
+
+  const toggleHomeVideo = () => {
+    if (!homeVideo) return;
+    if (homeVideo.paused) homeVideo.play().catch(() => {});
+    else homeVideo.pause();
+  };
+  videoToggle?.addEventListener("click", toggleHomeVideo);
+  homeVideo?.addEventListener("click", toggleHomeVideo);
+  homeVideo?.addEventListener("play", updateVideoButton);
+  homeVideo?.addEventListener("pause", updateVideoButton);
+  homeVideo?.addEventListener("ended", updateVideoButton);
 
   const progressBar = document.querySelector(".reading-progress span");
   const updateProgress = () => {

@@ -64,11 +64,14 @@
           <div class="hero-visual reveal">
             <div class="copper-orbit orbit-one" aria-hidden="true"></div>
             <div class="copper-orbit orbit-two" aria-hidden="true"></div>
-            <button class="browser-window hero-browser media-open" type="button" data-image="assets/bakir/home.webp" data-caption="Bakır Cosmetic ana sayfa ve altı slaytlı ürün vitrini" aria-label="Bakır Cosmetic ana sayfa ekranını büyüt">
+            <div class="browser-window hero-browser video-browser">
               <span class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><b>bakircosmetic.com</b></span>
-              <img src="assets/bakir/home.webp" alt="Bakır Cosmetic ana sayfasında profesyonel saç bakım ürünleri vitrini" />
-              <span class="image-hint">Büyüt ↗</span>
-            </button>
+              <video id="bakir-home-video" poster="assets/bakir/home.webp" preload="metadata" muted playsinline loop aria-label="Bakır Cosmetic ana sayfa ekran kaydı">
+                <source src="assets/bakir/home-walkthrough.mp4" type="video/mp4" />
+              </video>
+              <span class="video-kicker">GERÇEK EKRAN KAYDI</span>
+              <button class="video-toggle" type="button" aria-controls="bakir-home-video" aria-label="Ana sayfa ekran kaydını oynat"><span aria-hidden="true">▶</span><b>Ana sayfa akışını oynat</b></button>
+            </div>
             <div class="floating-stat stat-products"><small>ÜRÜN VERİTABANI</small><strong>147</strong><span>ürün</span></div>
             <div class="floating-stat stat-brands"><small>MARKA FİLTRESİ</small><strong>23</strong><span>marka</span></div>
           </div>
@@ -170,9 +173,19 @@
         </div>
 
         <div class="responsive-story reveal">
-          <div class="phone-frame">
-            <span aria-hidden="true"></span>
-            <img src="assets/bakir/mobile-home.webp" alt="Bakır Cosmetic mobil ana sayfa" loading="lazy" />
+          <div class="phone-device" aria-label="Bakır Cosmetic mobil arayüz önizlemesi">
+            <i class="phone-button phone-volume-up" aria-hidden="true"></i>
+            <i class="phone-button phone-volume-down" aria-hidden="true"></i>
+            <i class="phone-button phone-power" aria-hidden="true"></i>
+            <div class="phone-frame">
+              <span class="phone-island" aria-hidden="true"></span>
+              <button class="phone-screen media-open" type="button" data-image="assets/bakir/mobile-home.webp" data-caption="Bakır Cosmetic mobil ana sayfa ve hızlı iletişim eylemleri" aria-label="Mobil ana sayfa ekranını büyüt">
+                <img src="assets/bakir/mobile-home.webp" alt="Bakır Cosmetic mobil ana sayfa" loading="lazy" />
+                <span class="phone-screen-continuation" aria-hidden="true"><i></i><small>SCROLL EXPERIENCE</small></span>
+              </button>
+              <span class="phone-home-indicator" aria-hidden="true"></span>
+            </div>
+            <span class="phone-caption"><b>MOBILE</b> · RESPONSIVE UI</span>
           </div>
           <div class="responsive-copy">
             <span class="section-index">MOBİL UYARLAMA</span>
