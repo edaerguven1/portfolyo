@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.svg?v=1790767354087" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=1790729737734" />
+    <link rel="stylesheet" href="styles.css?v=1790799642166" />
     <script>
       const savedTheme = localStorage.getItem("core-theme");
       const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -148,25 +148,9 @@
           </article>
 
           <article class="phone-shell">
-            <div class="phone-screen">
-              <div class="phone-island" aria-hidden="true"></div>
-              <div class="phone-topline"><span>09:41</span><span>5G · 87%</span></div>
-              <div class="phone-greeting"><span>Günaydın</span><strong>Şehir şimdi nasıl?</strong></div>
-              <div class="mini-map">
-                <svg viewBox="0 0 260 210" role="img" aria-label="Canlı vapur rotası">
-                  <path class="coast" d="M-5 58c39 20 53 7 86 25s56-2 86 9 46 36 98 20v103H-5Z" />
-                  <path class="route" d="M26 145C70 105 107 133 141 97s60-32 92-62" />
-                  <circle class="route-point" cx="28" cy="144" r="6" />
-                  <circle class="route-point end" cx="232" cy="35" r="6" />
-                  <g class="boat" transform="translate(136 92)"><circle r="14" /><path d="m-7 1 14-6-3 9H-5Z" /></g>
-                </svg>
-                <div class="map-chip"><span class="status-dot"></span> Canlı rota</div>
-              </div>
-              <div class="trip-card">
-                <div><span>Konak → Karşıyaka</span><strong>09 dk</strong></div>
-                <div class="trip-progress"><i></i></div>
-                <small>14.8 knot · sakin deniz</small>
-              </div>
+            <div class="phone-screen" style="padding: 0; min-height: auto;">
+              <div class="phone-island" aria-hidden="true" style="z-index: 10; top: 14px; position: absolute; left: 50%; transform: translateX(-50%); width: 28%; height: 20px; border-radius: 12px; background: #000;"></div>
+              <img src="assets/izdeniz/home-dark.webp" alt="İzdeniz mobil uygulaması ekran görüntüsü" style="width: 100%; height: auto; display: block; object-fit: cover; aspect-ratio: 828/1792;" />
             </div>
           </article>
 
@@ -315,7 +299,7 @@
 
       <section class="section-shell content-section" id="lab" aria-labelledby="lab-title">
         <div class="section-heading reveal">
-          <div><span class="section-kicker">03 · ZANAAT LABORATUVARI</span><h2 id="lab-title">Detayları deneyerek geliştiriyorum.</h2></div>
+          <div><span class="section-kicker">03 · ETKİLEŞİMLER</span><h2 id="lab-title">Detayları deneyerek geliştiriyorum.</h2></div>
           <p>Küçük etkileşimler yalnızca dekorasyon değil; anlaşılabilirliği, hızı ve ürün hissini güçlendiren araçlardır.</p>
         </div>
         <div class="lab-grid">

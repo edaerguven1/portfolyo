@@ -680,7 +680,9 @@ html[data-theme="light"] .demo-thumb.active { color: var(--text); background: va
   .proof-strip { gap: 8px; }
   .proof-strip strong { font-size: 18px; }
   .proof-strip span { font-size: 12px; }
-  .hero-visual { left: 50%; width: 540px; margin-left: -270px; transform: scale(.68); margin-top: -80px; margin-bottom: -80px; }
+  .hero-visual { left: auto; width: 100%; margin-left: auto; transform: none; margin-top: -20px; margin-bottom: -20px; min-height: 480px; }
+    .visual-orbit { width: min(320px, 90vw); height: min(320px, 90vw); }
+    .phone-shell { width: min(220px, 60vw); transform: rotate(0deg); }
   .section-heading h2 { font-size: 37px; }
   .project-copy, .project-compact { padding: 26px; }
   .bakir-device-preview, .bakir-device-stage { min-height: 340px; }

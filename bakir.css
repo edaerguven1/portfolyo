@@ -293,7 +293,7 @@ html[data-theme="light"] .outro-layout > p { color: var(--muted); }
   .hero-actions { display: grid; grid-template-columns: 1fr; }
   .hero-actions a { width: 100%; box-sizing: border-box; }
   .hero-visual { min-height: 335px; }
-  .hero-browser { width: 100%; border-radius: 14px; }
+  .hero-browser { width: min(340px, 92vw); border-radius: 14px; margin: 0 auto; display: block; }
   .browser-bar { height: 29px; }
   .orbit-one { width: 300px; height: 300px; }
   .orbit-two { width: 225px; height: 225px; }
