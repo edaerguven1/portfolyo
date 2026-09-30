@@ -121,7 +121,7 @@ const roleProfiles = {
     ],
     stack: ["React Native", "Flutter", "REST", "Firebase"],
     core: "MOBILE<br>DEV",
-    nodes: ["iOS", "DROID", "UX", "SYNC"],
+    nodes: ["iOS", "Android", "UX", "SYNC"],
   },
   frontend: {
     code: "FRONTEND",
