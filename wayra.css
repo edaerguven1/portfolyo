@@ -280,7 +280,7 @@ html[data-theme="dark"] .case-summary, html[data-theme="dark"] .value-card, html
   .hero-actions .case-primary, .hero-actions .case-secondary { box-sizing: border-box; width: 100%; max-width: 100%; }
   .hero-facts { grid-template-columns: 1fr; }
   .hero-visual { min-height: 520px; }
-  .hero-glow { width: 390px; height: 390px; }
+  .hero-glow { width: 100%; height: auto; aspect-ratio: 1; max-width: 390px; }
   .phone-home { width: min(190px, 48vw); left: 50%; transform: translateX(-55%) rotate(-3deg); margin: 0; z-index: 2; }
     .phone-route { width: min(140px, 35vw); right: 0%; left: auto; bottom: 5%; transform: rotate(6deg); opacity: 0.85; z-index: 1; }
   .pill-ai { left: 0; top: 44%; }
