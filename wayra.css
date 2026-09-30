@@ -239,8 +239,8 @@ html[data-theme="dark"] .case-summary, html[data-theme="dark"] .value-card, html
   .hero-copy h1, .hero-lead { margin-left: auto; margin-right: auto; }
   .case-label, .hero-actions { justify-content: center; }
   .hero-visual { width: min(600px, 100%); min-height: 620px; margin: 0 auto; transform: none; }
-  .phone-home { width: min(260px, 45vw); left: 5%; transform: rotate(-3deg); margin: 0; }
-  .phone-route { width: min(210px, 38vw); right: 5%; left: auto; bottom: 5%; transform: rotate(6deg); opacity: 0.85; z-index: 1; }
+  .phone-home { width: min(280px, 45vw); left: 50%; transform: translateX(-60%) rotate(-3deg); margin: 0; }
+  .phone-route { width: min(220px, 35vw); right: 2%; left: auto; bottom: 5%; transform: rotate(6deg); opacity: 0.85; z-index: 1; }
   .hero-facts { width: min(650px, 100%); margin-inline: auto; text-align: left; }
   .case-summary { grid-template-columns: 1fr 1fr; }
   .value-grid, .tech-grid, .social-story { grid-template-columns: 1fr; }
@@ -281,8 +281,8 @@ html[data-theme="dark"] .case-summary, html[data-theme="dark"] .value-card, html
   .hero-facts { grid-template-columns: 1fr; }
   .hero-visual { min-height: 520px; }
   .hero-glow { width: 390px; height: 390px; }
-  .phone-home { width: min(190px, 48vw); left: 5%; transform: rotate(-3deg); margin: 0; }
-    .phone-route { width: min(150px, 38vw); right: 5%; left: auto; bottom: 5%; transform: rotate(6deg); opacity: 0.85; z-index: 1; }
+  .phone-home { width: min(190px, 48vw); left: 50%; transform: translateX(-55%) rotate(-3deg); margin: 0; z-index: 2; }
+    .phone-route { width: min(140px, 35vw); right: 0%; left: auto; bottom: 5%; transform: rotate(6deg); opacity: 0.85; z-index: 1; }
   .pill-ai { left: 0; top: 44%; }
   .pill-social { right: 0; bottom: 6%; }
   .case-summary { grid-template-columns: 1fr; margin-top: -20px; }
