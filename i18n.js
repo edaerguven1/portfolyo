@@ -94,6 +94,8 @@
     "Kurumsal katalog": "Corporate catalog",
     "Responsive web": "Responsive web",
     "147 ürün ve 23 markayı; filtreleme, dinamik ürün detayı ve WhatsApp sipariş akışıyla birleştiren kurumsal katalog.": "A corporate catalog combining 147 products and 23 brands with filtering, dynamic product details, and a WhatsApp ordering flow.",
+    "HTML · CSS · JS": "HTML · CSS · JS",
+    "HTML5, CSS3 ve Vanilla JavaScript ile geliştirilen; 147 ürün ve 23 markayı filtreleme, dinamik ürün detayı ve WhatsApp sipariş akışıyla birleştiren responsive kurumsal katalog.": "A responsive corporate catalog built with HTML5, CSS3, and Vanilla JavaScript, bringing together 147 products and 23 brands with filtering, dynamic product details, and a WhatsApp ordering flow.",
     "Proje özellikleri": "Project features",
     "Katalog": "Catalog",
     "147 ürün · 23 marka": "147 products · 23 brands",
