@@ -414,8 +414,8 @@ html[data-theme="dark"] .case-outro {
   .case-hero h1 { font-size: clamp(43px, 13vw, 60px); }
   .hero-facts { grid-template-columns: 1fr; }
   .hero-visual { min-height: 510px; }
-  .phone-main { width: min(286px, 72vw); left: 50%; transform: translateX(-58%) rotate(-3deg); }
-  .phone-secondary { width: min(214px, 54vw); right: -2%; }
+  .phone-main { width: min(240px, 55vw); left: 50%; transform: translateX(-55%) rotate(-3deg); }
+  .phone-secondary { width: min(180px, 42vw); right: 0%; bottom: 5%; }
   .note-route { left: 0; top: 44%; }
   .note-map { right: 0; bottom: 7%; }
   .case-summary { grid-template-columns: 1fr; margin-top: -20px; }
