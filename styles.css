@@ -238,6 +238,10 @@ main { position: relative; z-index: 1; }
 .bakir-preview-label small { color: #75675c; font-size: 9px; }
 .bakir-device-preview:hover .bakir-laptop { transform: translateY(-6px); }
 .bakir-device-preview:hover .bakir-preview-phone { transform: rotate(2deg) translateY(-7px); }
+html[data-theme="dark"] .bakir-device-preview { color: #fff; background: radial-gradient(circle at 76% 21%, rgba(199,121,48,.28), transparent 28%), radial-gradient(circle at 17% 78%, rgba(124,72,34,.2), transparent 26%), linear-gradient(145deg, #17120e, #080706); }
+html[data-theme="dark"] .bakir-device-stage::before, html[data-theme="dark"] .bakir-device-stage::after { border-color: rgba(207,137,67,.24); }
+html[data-theme="dark"] .bakir-preview-label { border-color: rgba(255,255,255,.13); background: rgba(8,7,6,.72); box-shadow: 0 12px 28px rgba(0,0,0,.24); }
+html[data-theme="dark"] .bakir-preview-label small { color: rgba(255,255,255,.78); }
 .project-icon { width: 46px; height: 46px; margin-bottom: 44px; display: grid; place-items: center; border-radius: 14px; font-family: var(--mono); font-size: 12px; font-weight: 700; }
 .project-icon.violet, .capability-symbol.violet { color: var(--violet); background: var(--violet-soft); }
 .project-icon.mint, .capability-symbol.mint { color: var(--mint); background: var(--mint-soft); }
