@@ -218,9 +218,9 @@ main { position: relative; z-index: 1; }
 .preview-metrics small { color: #7e8aa0; font-size: 11px; }
 .preview-metrics b { color: white; font-family: var(--mono); font-size: 12px; }
 .project-compact { min-height: 430px; padding: 34px; }
-.bakir-device-preview { min-height: 520px; color: #fff; background: radial-gradient(circle at 76% 21%, rgba(199,121,48,.28), transparent 28%), radial-gradient(circle at 17% 78%, rgba(124,72,34,.2), transparent 26%), linear-gradient(145deg, #17120e, #080706); }
+.bakir-device-preview { min-height: 520px; color: #26180f; background: radial-gradient(circle at 76% 21%, rgba(199,121,48,.23), transparent 30%), radial-gradient(circle at 17% 78%, rgba(225,177,128,.28), transparent 28%), linear-gradient(145deg, #fffaf4, #f2e5d7 62%, #fffdf9); }
 .bakir-device-stage { position: relative; height: 100%; min-height: 520px; overflow: hidden; }
-.bakir-device-stage::before, .bakir-device-stage::after { content: ""; position: absolute; border: 1px solid rgba(207,137,67,.24); border-radius: 50%; }
+.bakir-device-stage::before, .bakir-device-stage::after { content: ""; position: absolute; border: 1px solid rgba(176,102,39,.25); border-radius: 50%; }
 .bakir-device-stage::before { width: 430px; height: 430px; top: 4%; left: 2%; }
 .bakir-device-stage::after { width: 300px; height: 300px; right: -7%; bottom: -12%; border-style: dashed; }
 .bakir-laptop { position: absolute; z-index: 2; width: 76%; top: 19%; left: 5%; filter: drop-shadow(0 32px 38px rgba(0,0,0,.48)); transition: transform 350ms ease; }
@@ -233,9 +233,9 @@ main { position: relative; z-index: 1; }
 .bakir-preview-phone > span { position: absolute; z-index: 2; top: 9px; left: 50%; width: 38px; height: 10px; border-radius: 999px; background: #030303; transform: translateX(-50%); }
 .bakir-preview-phone img { width: 100%; height: 100%; display: block; border-radius: 20px; object-fit: contain; object-position: top; background: #0f0e0d; }
 .bakir-preview-phone > i { position: absolute; z-index: 2; bottom: 9px; left: 50%; width: 40px; height: 2px; border-radius: 999px; background: rgba(255,255,255,.78); transform: translateX(-50%); }
-.bakir-preview-label { position: absolute; z-index: 5; left: 6%; bottom: 7%; display: grid; gap: 4px; padding: 10px 12px; border: 1px solid rgba(255,255,255,.13); border-radius: 12px; background: rgba(8,7,6,.7); backdrop-filter: blur(12px); }
+.bakir-preview-label { position: absolute; z-index: 5; left: 6%; bottom: 7%; display: grid; gap: 4px; padding: 10px 12px; border: 1px solid rgba(125,75,33,.14); border-radius: 12px; background: rgba(255,250,244,.78); backdrop-filter: blur(12px); box-shadow: 0 12px 28px rgba(80,45,18,.12); }
 .bakir-preview-label b { color: #d58a3d; font-family: var(--mono); font-size: 8px; letter-spacing: .08em; }
-.bakir-preview-label small { color: rgba(255,255,255,.78); font-size: 9px; }
+.bakir-preview-label small { color: #75675c; font-size: 9px; }
 .bakir-device-preview:hover .bakir-laptop { transform: translateY(-6px); }
 .bakir-device-preview:hover .bakir-preview-phone { transform: rotate(2deg) translateY(-7px); }
 .project-icon { width: 46px; height: 46px; margin-bottom: 44px; display: grid; place-items: center; border-radius: 14px; font-family: var(--mono); font-size: 12px; font-weight: 700; }
